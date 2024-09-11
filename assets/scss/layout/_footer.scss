@@ -1,7 +1,9 @@
+.item-border{
+    border-top: 1px solid $gray-400;
+}
 .nav-item{
     width: 75px;
     height: 56px;
-    border-top: 1px solid $gray-400;
 }
 .nav-link{
     border-top: 1px solid $gray-400;
