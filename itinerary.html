@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AAPD</title>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <script type="module" crossorigin src="/AAPD/assets/main-83819a40.js"></script>
+    <link rel="stylesheet" href="/AAPD/assets/main-0217e401.css">
+  </head>
+  <body>
+        <div class="container px-0 vh-100">
+            <div class="bg-itinerary w-100 h-100 d-flex flex-column">
+                <header class="text-center d-flex align-items-center">
+                    <a class="btn" href="index.html" role="button"><img src="/AAPD/assets/back_40-e100e6f0.svg" alt="back button"></a>
+                    <div class="ms-center">
+                        <h4 class="fw-bold text-white">新行程</h4>
+                    </div>
+                </header>
+                <main class="bg-white form-content mt-auto rounded-top-4">
+                    <form class="px-6 pt-6">
+<!-- 請輸入 行程名稱 -->
+                        <label for="itinerary-name" class="form-label fs-h5 fw-600">行程名稱</label>
+                        <input type="text" class="form-control rounded-1 mb-6 fs-h5" id="itinerary-name" placeholder="請填寫" maxlength="24">
+<!-- 國家森林區域 按鈕 -->
+                        <label for="NationalForestRegion" class="form-label fs-h5 fw-600">國家森林區域</label>
+                        <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active-none" href="#" role="button" id="NationalForestRegion">
+                          <img src="/AAPD/assets/tree-596d8f14.svg" alt="tree svg">
+                          <span class="fs-h5 ms-2">已選擇</span>
+                          <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
+                        </a>
+<!-- 請選擇 日期 -->
+                        <label for="itinerary-date" class="form-label fs-h5 fw-600">日期</label>
+                        <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active-none" href="#" role="button" id="itinerary-date">
+                          <img src="/AAPD/assets/calendar-5a64de12.svg" alt="calendar svg">
+                          <span class="fs-h5 ms-2">已選擇</span>
+                          <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
+                        </a>
+<!-- 請選擇 交通工具 -->
+                        <label for="itinerary-transportation" class="form-label fs-h5 fw-600">交通工具</label>
+                        <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 text-gray-400 hover-active-none" href="#" role="button" id="itinerary-transportation">
+                          <img src="/AAPD/assets/transportation-01e73b24.svg" alt="transportation svg">
+                          <span class="fs-h5 ms-2">已選擇</span>
+                          <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
+                        </a>
+                    </form>
+                </main>
+            </div>
+<!-- footer -->
+            <footer class="item-border pt-3 pb-2 px-6 mt-auto">
+              <a class="btn btn-gray-600 next-step fs-h4 fw-bold rounded-2 mb-2 d-block" href="#" role="button">下一步</a>
+            </footer>
+        </div>
+
+    
+  </body>
+</html>
