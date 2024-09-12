@@ -1,0 +1,62 @@
+.item-border{
+    border-top: 1px solid $gray-400;
+}
+.nav-item{
+    width: 75px;
+    height: 56px;
+}
+.nav-link{
+    border-top: 1px solid $gray-400;
+    .icon-home,.icon-map,.icon-activity,.icon-notify,.icon-notify,.icon-member{
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+    }
+    .icon-home{
+        background-image: url(../icon/Navigation-icon/home-no.svg);
+    }
+    .icon-map{
+        background-image: url(../icon/Navigation-icon/map-no.svg);
+    }
+    .icon-activity{
+        background-image: url(../icon/Navigation-icon/activity-no.svg);
+    }
+    .icon-notify{
+        background-image: url(../icon/Navigation-icon/notify-no.svg);
+    }
+    .icon-member{
+        background-image: url(../icon/Navigation-icon/member-no.svg);
+    }
+    .icon-desc{
+        color:$gray-400;
+    }
+}
+
+.nav-link:hover{
+    .icon-home{
+        background-image: url(../icon/Navigation-icon/home-yes.svg);
+    }
+    .icon-map{
+        background-image: url(../icon/Navigation-icon/map-yes.svg);
+    }
+    .icon-activity{
+        background-image: url(../icon/Navigation-icon/activity-yes.svg);
+    }
+    .icon-notify{
+        background-image: url(../icon/Navigation-icon/notify-yes.svg);
+    }
+    .icon-member{
+        background-image: url(../icon/Navigation-icon/member-yes.svg);
+    }
+    .icon-desc{
+        color:$primary-600;
+    }
+}
+
+
+// .icon-home:hover{
+//     background-image: url(../icon/Navigation-icon/home-yes.svg);
+//     width: 24px;
+//     height: 24px;
+//     background-size: cover;
+// }

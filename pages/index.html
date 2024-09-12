@@ -8,9 +8,15 @@
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-kaka
-    <%- include('./layout/footer'); -%>
+    <div class="container px-0 d-flex flex-column align-items-center">
+      <h2 class="fw-bold mb-2">我的行程</h2>
+      <div class="text-center content-padding w-100">
+        <img class="mb-4" src="../assets/images/backpacker-1.png" alt="backpacker png">
+        <p class="mb-4 text-gray-400">還沒有安排新行程哦～</p>
+        <button type="button" class="btn btn-secondary-500 text-white py-3 px-50px rounded-3">建立新行程</button>
+      </div>
+      <%- include('./layout/footer'); -%>
+    </div>
 
     <script type="module" src="../main.js"></script>
   </body>
