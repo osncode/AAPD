@@ -630,12 +630,12 @@ $border-color-translucent:    rgba($black, .175) !default;
 // $border-radius-xl:            1rem !default;
 
 // AAPD radius
-$border-radius-sm:            12px !default; // S = 1
-$border-radius:               16px !default; // M = 2
-$border-radius-lg:            24px !default; // L = 3
-$border-radius-xl:            32px !default; // XL = 4
+$border-radius-sm:            8px !default; // xs = 1
+$border-radius:               12px !default; // S = 2
+$border-radius-lg:            16px !default; // M = 3
+$border-radius-xl:            24px !default; // L = 4
 
-$border-radius-xxl:           2rem !default;
+$border-radius-xxl:           32px !default; // XL = 5
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 // fusv-disable
@@ -1025,9 +1025,15 @@ $input-focus-bg:                        $input-bg !default;
 $input-focus-border-color:              tint-color($component-active-bg, 50%) !default;
 $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
-$input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
+// $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color:               var(--#{$prefix}secondary-color) !default;
+// AAPD 關閉 按下觸發邊框 shadow
+$input-focus-box-shadow:      false !default;
+
+// $input-placeholder-color:               var(--#{$prefix}secondary-color) !default;
+
+// AAPD placeholder-color
+$input-placeholder-color:               $gray-400 !default;
 $input-plaintext-color:                 var(--#{$prefix}body-color) !default;
 
 $input-height-border:                   calc(#{$input-border-width} * 2) !default; // stylelint-disable-line function-disallowed-list

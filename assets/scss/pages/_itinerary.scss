@@ -1,0 +1,34 @@
+.ms-center{
+    margin-left: calc((100% / 2 ) - 90px );
+}
+
+.bg-itinerary{
+    background-image: url(../images/itinerary-Background.png);
+    background-size: contain;
+}
+
+.form-content{
+    height: 75.3%;
+}
+
+.fw-600{
+    font-weight: 600;
+}
+
+.hover-active-none{
+    &:hover, &:active{
+        background: none!important;
+    }
+}
+
+.home-indicator{
+    width: 139px;
+    height: 5px;
+    background-color: #000;
+}
+
+.next-step{
+    &:hover{
+        background-color: $primary-600;
+    }
+}
