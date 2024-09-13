@@ -8,22 +8,23 @@
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
   </head>
   <body>
-        <div class="container px-0 vh-100">
+        <div class="new-itinerary container px-0 vh-100">
             <div class="bg-itinerary w-100 h-100 d-flex flex-column">
                 <header class="text-center d-flex align-items-center">
                     <a class="btn" href="index.html" role="button"><img src="../assets/icon/icon24px/back_40.svg" alt="back button"></a>
-                    <div class="ms-center">
+                    <div class="ms-center-title">
                         <h4 class="fw-bold text-white">新行程</h4>
                     </div>
                 </header>
                 <main class="bg-white form-content mt-auto rounded-top-4">
-                    <form class="px-6 pt-6">
+                    <form class="pt-6 h-100 position-relative d-flex flex-column">
 <!-- 請輸入 行程名稱 -->
+                      <div class="px-6">
                         <label for="itinerary-name" class="form-label fs-h5 fw-600">行程名稱</label>
                         <input type="text" class="form-control rounded-1 mb-6 fs-h5" id="itinerary-name" placeholder="請填寫" maxlength="24">
 <!-- 國家森林區域 按鈕 -->
                         <label for="NationalForestRegion" class="form-label fs-h5 fw-600">國家森林區域</label>
-                        <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active-none" href="#" role="button" id="NationalForestRegion">
+                        <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active-none" data-bs-toggle="collapse" href="#collapseNationalForestRegion" role="button" id="NationalForestRegion" aria-expanded="false" aria-controls="collapseExample">
                           <img src="../assets/icon/icon20px/tree.svg" alt="tree svg">
                           <span class="fs-h5 ms-2">已選擇</span>
                           <img class="ms-auto" src="../assets/icon/icon14px/chevron.svg" alt="chevron svg">
@@ -42,13 +43,30 @@
                           <span class="fs-h5 ms-2">已選擇</span>
                           <img class="ms-auto" src="../assets/icon/icon14px/chevron.svg" alt="chevron svg">
                         </a>
+                      </div>
+
+          <!-- 國家森林區域 collapse -->
+                        <div class="collapse position-absolute bottom-0 w-100 end-0 collapse-body" id="collapseNationalForestRegion">
+                          <div class="card card-body rounded-bottom-0 h-100 rounded-top-4 px-0 py-0">
+                            <section class="px-6 d-flex align-items-center border-bottom">
+                              <a class="btn" href="index.html" role="button"><img src="../assets/icon/icon24px/back.svg" alt="back button"></a>
+                              <div class="ms-center-menu">
+                                <h4 class="text-gray-dark">選擇 國家森林遊樂區</h4>
+                              </div>
+                            </section>
+                            <div class="item-border pt-3 pb-2 mt-auto">
+                              <a class="btn btn-gray-600 next-step fs-h4 fw-bold rounded-2 d-block mx-6" data-bs-toggle="collapse" href="#collapseNationalForestRegion" role="button" id="NationalForestRegion" aria-expanded="false" aria-controls="collapseExample">確定
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+            <!-- footer -->
+                      <footer class="item-border pt-3 pb-2 px-6 mt-auto bottom-0 w-100 mt-auto">
+                        <a class="btn btn-gray-600 next-step fs-h4 fw-bold rounded-2 mb-2 d-block" href="#" role="button">下一步</a>
+                      </footer>
                     </form>
                 </main>
             </div>
-<!-- footer -->
-            <footer class="item-border pt-3 pb-2 px-6 mt-auto">
-              <a class="btn btn-gray-600 next-step fs-h4 fw-bold rounded-2 mb-2 d-block" href="#" role="button">下一步</a>
-            </footer>
         </div>
 
     <script type="module" src="../main.js"></script>
