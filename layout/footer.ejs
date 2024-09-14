@@ -4,8 +4,8 @@
 <!-- nav-icon-home -->
             <li class="nav-item page-item">
                 <a class="nav-link page-link d-flex flex-column align-items-center border-0" href="#">
-                    <div class="icon-home p-1 mb-1"></div>
-                    <span class="icon-desc fs-h7 fw-bold">行程</span>
+                    <div class="icon-home p-1 mb-1 <%= page === 'itinerary' ? 'icon-home-current' : '' %>"></div>
+                    <span class="icon-desc fs-h7 fw-bold <%= page === 'itinerary' ? 'icon-current-desc' : '' %>">行程</span>
                 </a>
             </li>
 <!-- nav-icon-map -->

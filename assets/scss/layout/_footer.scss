@@ -13,6 +13,9 @@
         height: 20px;
         background-size: cover;
     }
+    .icon-home-current{
+        background-image: url(../icon/Navigation-icon/home-yes.svg)!important;
+    }
     .icon-home{
         background-image: url(../icon/Navigation-icon/home-no.svg);
     }
@@ -30,6 +33,9 @@
     }
     .icon-desc{
         color:$gray-400;
+    }
+    .icon-current-desc{
+        color:$primary-600;
     }
 }
 
