@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AAPD</title>
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <script type="module" crossorigin src="/AAPD/assets/main-f134558a.js"></script>
-    <link rel="stylesheet" href="/AAPD/assets/main-bc08e505.css">
+    <script type="module" crossorigin src="/AAPD/assets/main-d17f9ea3.js"></script>
+    <link rel="stylesheet" href="/AAPD/assets/main-35fe76cd.css">
   </head>
   <body>
         <div class="new-itinerary container px-0 vh-100">
@@ -26,10 +26,11 @@
                         <input type="text" class="form-control rounded-1 mb-6 fs-h5" id="itinerary-name" placeholder="請填寫" maxlength="24">
 <!-- 國家森林區域 按鈕 -->
                         <label for="NationalForestRegion" class="form-label fs-h5 fw-600">國家森林區域</label>
-                        <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active-none" data-bs-toggle="collapse" href="#collapseNationalForestRegion" role="button" id="NationalForestRegion" aria-expanded="false" aria-controls="collapseExample">
-                          <img src="/AAPD/assets/tree-596d8f14.svg" alt="tree svg">
-                          <span class="fs-h5 ms-2">已選擇</span>
-                          <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
+                        <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active-none" data-bs-toggle="modal" href="#modalNationalForestRegion" role="button" id="NationalForestRegion">
+
+                        <img src="/AAPD/assets/tree-596d8f14.svg" alt="tree svg">
+                        <span class="fs-h5 ms-2">已選擇</span>
+                        <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
                         </a>
 <!-- 請選擇 日期 -->
                         <label for="itinerary-date" class="form-label fs-h5 fw-600">日期</label>
@@ -46,106 +47,112 @@
                           <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
                         </a>
                       </div>
-
-<!-- 國家森林區域 collapse -->
-                      <div class="collapse position-absolute bottom-0 w-100 end-0" id="collapseNationalForestRegion">
-                        <div class="card card-body rounded-bottom-0 rounded-top-4 px-0 py-0 collapse-body">
-                          <section class="px-6 d-flex align-items-center border-bottom mb-8">
-                            <a class="btn" href="itinerary.html" role="button"><img src="/AAPD/assets/back-5a64f715.svg" alt="back button"></a>
-                            <div class="ms-center-menu">
-                              <h4 class="text-gray-black fw-bold">選擇 國家森林遊樂區</h4>
-                            </div>
-                          </section>
-                  <!-- 臺灣北部 -->
-                          <section class="px-6 mb-auto">
-                            <h5 class="fw-bold mb-2 text-gray-black">台灣北部</h5>
-                            <div class="row py-2">
-                              <div class="col-4">
-                                <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">滿月圓</a>
-                              </div>
-                              <div class="col-4 btn-size-auto">
-                                <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">東眼山</a>
-                              </div>
-                              <div class="col-4 btn-size-auto">
-                                <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">內洞</a>
-                              </div>
-                              <div class="col-4 btn-size-auto">
-                                <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">太平山</a>
-                              </div>
-                            </div>
-                          </section>
-                  <!-- 臺灣中部 -->
-                        <section class="px-6 mb-auto">
-                          <h5 class="fw-bold mb-2 text-gray-black">台灣中部</h5>
-                          <div class="row py-2">
-                            <div class="col-4">
-                              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">觀霧</a>
-                            </div>
-                            <div class="col-4 btn-size-auto">
-                              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">大雪山</a>
-                            </div>
-                            <div class="col-4 btn-size-auto">
-                              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">武嶺</a>
-                            </div>
-                            <div class="col-4 btn-size-auto">
-                              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">八仙山</a>
-                            </div>
-                          </div>
-                        </section>
-                  <!-- 臺灣南部 -->
-                      <section class="px-6 mb-auto">
-                        <h5 class="fw-bold mb-2 text-gray-black">台灣南部</h5>
-                        <div class="row py-2">
-                          <div class="col-4">
-                            <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">阿里山</a>
-                          </div>
-                          <div class="col-4 btn-size-auto">
-                            <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">合歡山</a>
-                          </div>
-                          <div class="col-4 btn-size-auto">
-                            <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">雙流</a>
-                          </div>
-                          <div class="col-4 btn-size-auto">
-                            <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">奧萬大</a>
-                          </div>
-                          <div class="col-4 btn-size-auto">
-                            <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">藤枝</a>
-                          </div>
-                          <div class="col-4 btn-size-auto">
-                            <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">墾丁</a>
-                          </div>
-                        </div>
-                      </section>
-                  <!-- 臺灣東部 -->
-                      <section class="px-6 mb-auto">
-                        <h5 class="fw-bold mb-2 text-gray-black">台灣東部</h5>
-                        <div class="row py-2">
-                          <div class="col-4">
-                            <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">知本</a>
-                          </div>
-                          <div class="col-4 btn-size-auto">
-                            <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">富源</a>
-                          </div>
-                          <div class="col-4 btn-size-auto">
-                            <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">向陽</a>
-                          </div>
-                          <div class="col-4 btn-size-auto">
-                            <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">池南</a>
-                          </div>
-                        </div>
-                      </section>
-<!-- 國家森林區域 collapse 確定按鈕 -->
-                          <div class="item-border pt-3 pb-2 mt-auto">
-                            <a class="btn btn-gray-600 next-step fs-h4 fw-bold rounded-2 d-block mx-6" data-bs-toggle="collapse" href="#collapseNationalForestRegion" role="button" id="NationalForestRegion" aria-expanded="false" aria-controls="collapseExample">確定
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-            <!-- footer -->
+<!-- footer -->
                       <footer class="item-border pt-3 pb-2 px-6 mt-auto bottom-0 w-100 mt-auto">
                         <a class="btn btn-gray-600 next-step fs-h4 fw-bold rounded-2 mb-2 d-block" href="#" role="button">下一步</a>
                       </footer>
                     </form>
+<!-- modal 國家森林區域 -->
+                    <div class="modal-pick-NationalForestRegion">
+                        <!-- 國家森林區域 Modal -->
+<div class="modal fade" id="modalNationalForestRegion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog position-absolute bottom-0 end-0 start-0 modal-dialog-scrollable modal-h-NationalForestRegion">
+    <div class="modal-content rounded-bottom-0 rounded-top-4">
+      <div class="modal-header px-6 py-2 d-flex align-items-center">
+        <a class="btn" href="itinerary.html" role="button"><img src="/AAPD/assets/back-5a64f715.svg" alt="back button"></a>
+        <div class="ms-center-menu">
+          <h4 class="modal-title text-gray-black fw-bold" id="exampleModalLabel">選擇 國家森林遊樂區</h4>
+        </div>
+      </div>
+      <div class="modal-body">
+<!-- 臺灣北部 -->
+        <section class="px-6 mb-auto">
+          <h5 class="fw-bold mb-2 text-gray-black">台灣北部</h5>
+          <div class="row py-2">
+            <div class="col-4">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">滿月圓</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">東眼山</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">內洞</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">太平山</a>
+            </div>
+          </div>
+        </section>
+<!-- 臺灣中部 -->
+        <section class="px-6 mb-auto">
+          <h5 class="fw-bold mb-2 text-gray-black">台灣中部</h5>
+          <div class="row py-2">
+            <div class="col-4">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">觀霧</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">大雪山</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">武嶺</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">八仙山</a>
+            </div>
+          </div>
+        </section>
+<!-- 臺灣南部 -->
+        <section class="px-6 mb-auto">
+          <h5 class="fw-bold mb-2 text-gray-black">台灣南部</h5>
+          <div class="row py-2">
+            <div class="col-4">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">阿里山</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">合歡山</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">雙流</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">奧萬大</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">藤枝</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">墾丁</a>
+            </div>
+          </div>
+        </section>
+<!-- 臺灣東部 -->
+        <section class="px-6 mb-auto">
+          <h5 class="fw-bold mb-2 text-gray-black">台灣東部</h5>
+          <div class="row py-2">
+            <div class="col-4">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">知本</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">富源</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">向陽</a>
+            </div>
+            <div class="col-4 btn-size-auto">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active-none mb-2 fs-h5" href="#" role="button">池南</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+<!-- 國家森林區域 確定按鈕 -->
+      <div class="modal-footer item-border pt-3 pb-2 mt-auto">
+        <a class="btn btn-primary-600 fs-h4 fw-bold rounded-2 w-100 mx-6" data-bs-dismiss="modal" role="button">套用
+        </a>
+      </div>
+    </div>
+  </div>
+</div>                    </div>
                 </main>
             </div>
         </div>
