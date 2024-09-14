@@ -29,8 +29,11 @@
     </div>
 
     <script type="module" src="../main.js"></script>
-    <!-- Loading -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+
+    <!-- load the CDN first-->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- If CDN fails to load, serve up the local version -->
+    <script>window.JQuery || document.write('<script src="includes/js/jquery-2.1.4.min.js"><\/script>');</script>
     
   </body>
 </html>
