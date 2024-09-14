@@ -51,6 +51,12 @@
         font-size: 12px;
         color: $gray-200;
     }
+    .td-color-none{
+        &:hover{
+            background: #FFF!important;
+            cursor: none !important;
+        }
+    }
     td{
         font-size: 20px;
         border-radius: 4px;
