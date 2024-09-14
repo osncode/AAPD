@@ -13,7 +13,6 @@
 
     .form-content{
         height: calc(100% - 25%);
-        // height: auto;
     }
 
     .fw-600{
@@ -32,17 +31,11 @@
         background-color: #000;
     }
 
-    .next-step{
-        &:hover{
-            background-color: $primary-600;
-        }
-    }
-    .collapse-body{
-        height: 90.8%;
-        z-index:1;
-    }
     .item-border{
         border-top: 1px solid $gray-200;
         box-shadow: 0px -4px 20px 0px #00000014;
+    }
+    .modal-h-NationalForestRegion{
+        height: 70%;
     }
 }
