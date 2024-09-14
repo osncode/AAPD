@@ -41,4 +41,37 @@
     .modal-h-NationalForestRegion{
         height: 70%;
     }
+
 }
+
+.date-table-style{
+    width: 343px;
+    box-shadow: 0px 10px 60px 0px #0000001A;
+    border-radius: 13px;
+    th{
+        font-size: 13px;
+        color: $gray-200;
+    }
+    td{
+        cursor: pointer;
+        font-size: 20px;
+        color: $primary-600;
+        width: 32px;
+        height: 32px;
+        &:hover{
+            background-color: $primary-600;
+            color: #FFF;
+            font-weight: bold;
+        }
+    }
+}
+
+.position-control{
+    text-align: center;
+    top: 102%;
+    left: 2.5%;
+    width: 95%;
+}
+
+
+
