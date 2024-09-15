@@ -4,13 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AAPD</title>
+    <title>map</title>
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-kaka
-    <%- include('./layout/footer'); -%>
+    <header class="container text-center d-flex fixed-top bg-white align-items-center">
+      <a class="btn position-absolute" href="index.html" role="button"><img src="../assets/icon/icon24px/back.svg" alt="back button"></a>
+      <h1 class="h4 mx-auto my-3 fw-bold text-black position-relative">地圖</h1>
+    </header>
+<!-- 地圖內頁 -->
+    <section class="bgMap vh-100">
+      <div class="container d-flex flex-column h-100">
+        <button class="h5 align-self-start btn btn-outline-gray-50 bg-white d-flex align-items-center mt-4 mb-2 text-gray-600" data-bs-toggle="modal" href="#modalNationalForestRegion" id="NationalForestRegion" type="button">
+          <p class="me-2">選擇國家森林遊樂區</p>
+          <img src="../assets/icon/icon14px/chevron.svg" alt="chevron svg">
+        </button>
+        <!-- 搜尋列 -->
+        <div class="d-flex justify-content-between mb-4">
+          <!-- 搜尋框 -->
+          <form class="input-group align-items-center position-relative me-3" role="search">
+            <!-- 搜尋 ICON -->
+            <img id="searchIcon" role="img" src="../assets/icon/icon20px/search.svg" alt="search" class="input-icon position-absolute ms-2 text-black">
+            <!-- 搜尋輸入框 -->
+            <input id="searchInput" class="form-control rounded-4 h5 ps-10" type="search" placeholder="搜尋" aria-label="Search">
+            <!-- 清除 ICON -->
+            <img id="deleteIcon" role="img" src="../assets/icon/icon20px/delete.svg" alt="delete" class="input-icon d-none position-absolute end-0 me-2">
+          </form>
+          <!-- 篩選按鈕 -->
+          <button class="btn btn-outline-gray-50 bg-white  text-gray-600" data-bs-toggle="modal" href="#modalFilter" id="Filter" type="button">
+            <img src="../assets/icon/icon24px/filter.svg" alt="filter" class="icon24">
+          </button>
+        </div>
+        <!-- 搜尋區域按鈕 -->
+        <button type="button" class="align-self-center h5 bg-green-600 text-white py-2 px-4 rounded-4">搜尋此區域</button>
+        <button type="button" class="mt-auto mb-5 align-self-end gps rounded-circle"><img src="../assets/icon/icon24px/gps.svg" alt="gps" class="icon24"></button>
+      </div>
+    </section>
+    <!-- footer -->
+    <div class="resultHeader border-gray-200 bg-white fixed-bottom d-flex flex-column align-items-center rounded-top-4 rounded-bottom-0">
+      <hr class="titleHr mt-2">
+    </div>
+    
+    <script>
+      const searchInput = document.getElementById('searchInput');
+      const searchIcon = document.getElementById('searchIcon');
+      const clearIcon = document.getElementById('clearIcon');
+    
+      searchInput.addEventListener('input', () => {
+        if (searchInput.value.trim()) {
+          searchIcon.classList.add('d-none');
+          clearIcon.classList.remove('d-none');
+        } else {
+          searchIcon.classList.remove('d-none');
+          clearIcon.classList.add('d-none');
+        }
+      });
+    
+      clearIcon.addEventListener('click', () => {
+        searchInput.value = '';
+        searchInput.focus();
+        searchIcon.classList.remove('d-none');
+        clearIcon.classList.add('d-none');
+      });
+    </script>
 
     <script type="module" src="../main.js"></script>
   </body>

@@ -1,0 +1,39 @@
+.bgMap{
+    background-image: url("../images/map.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    padding-bottom:  57px;
+}
+.input-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+/* 搜尋 ICON 永久顯示在左側 */
+#searchIcon {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.icon24{
+    width: 24px;
+    height: 24px;
+}
+.bg-green-600{
+    background-color: $green-600;
+}
+.gps{
+    width: 44px;
+    height: 44px;
+    background-color: $green-600;
+}
+.resultHeader{
+    height: 56px;
+    width: 100%;
+}
+.titleHr{
+    width: 36px;
+    height: 5px;
+    border-radius: 100px;
+    background-color: $gray-200;
+}
