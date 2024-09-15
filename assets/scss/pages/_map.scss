@@ -8,6 +8,7 @@
 .input-icon {
     width: 20px;
     height: 20px;
+    z-index: 100;
     cursor: pointer;
 }
 /* 搜尋 ICON 永久顯示在左側 */
@@ -19,13 +20,12 @@
     width: 24px;
     height: 24px;
 }
-.bg-green-600{
-    background-color: $green-600;
-}
 .gps{
     width: 44px;
     height: 44px;
-    background-color: $green-600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .resultHeader{
     height: 56px;
@@ -36,4 +36,10 @@
     height: 5px;
     border-radius: 100px;
     background-color: $gray-200;
+}
+.Filter .col-4 :hover{
+    color: $primary-600;
+    font-weight: bold;
+    background-color: $primary-100;
+    border-color: $primary-300;
 }
