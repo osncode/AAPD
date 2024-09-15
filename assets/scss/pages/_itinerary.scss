@@ -1,34 +1,85 @@
-.ms-center{
-    margin-left: calc((100% / 2 ) - 90px );
+.new-itinerary{
+    .ms-center-title{
+        margin-left: calc((100% / 2 ) - 90px );
+    }
+    .ms-center-menu{
+        margin-left: calc((100% / 2 ) - 123.62px );
+    }
+
+    .bg-itinerary{
+        background-image: url(../images/itinerary-Background.png);
+        background-size: contain;
+    }
+
+    .form-content{
+        height: 70%;
+    }
+
+    .fw-600{
+        font-weight: 600;
+    }
+    .fw-500{
+        font-weight: 500;
+    }
+
+    .hover-active{
+        &:hover, &:active{
+            background-color: $primary-100!important;
+            color: $primary-600!important;
+            font-weight: bold;
+            border: 1px solid $primary-300!important;
+        }
+    }
+
+    .home-indicator{
+        width: 139px;
+        height: 5px;
+        background-color: #000;
+    }
+
+    .item-border{
+        border-top: 1px solid $gray-200;
+        box-shadow: 0px -4px 20px 0px #00000014;
+    }
+    .modal-h-NationalForestRegion{
+        height: 70%;
+    }
+
 }
 
-.bg-itinerary{
-    background-image: url(../images/itinerary-Background.png);
-    background-size: contain;
-}
-
-.form-content{
-    height: 75.3%;
-}
-
-.fw-600{
-    font-weight: 600;
-}
-
-.hover-active-none{
-    &:hover, &:active{
-        background: none!important;
+.date-table-style{
+    box-shadow: 0px 10px 60px 0px #0000001A;
+    border-radius: 13px;
+    max-width: 318px;
+    th{
+        font-size: 12px;
+        color: $gray-200;
+    }
+    .td-color-none{
+        &:hover{
+            background: #FFF!important;
+            cursor: none !important;
+        }
+    }
+    td{
+        font-size: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        color: $primary-500;
+        &:hover{
+            background-color: $primary-600;
+            color: #FFF;
+            font-weight: bold;
+        }
     }
 }
 
-.home-indicator{
-    width: 139px;
-    height: 5px;
-    background-color: #000;
+.position-control{
+    text-align: center;
+    top: 102%;
+    left: 2.5%;
+    width: 95%;
 }
 
-.next-step{
-    &:hover{
-        background-color: $primary-600;
-    }
-}
+
+
