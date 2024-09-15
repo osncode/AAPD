@@ -3,14 +3,14 @@
         <ul class="item-border pagination justify-content-around pt-3 mb-0">
 <!-- nav-icon-home -->
             <li class="nav-item page-item">
-                <a class="nav-link page-link d-flex flex-column align-items-center border-0" href="#">
+                <a class="nav-link page-link d-flex flex-column align-items-center border-0" href="itinerary.html">
                     <div class="icon-home p-1 mb-1 <%= page === 'itinerary' ? 'icon-home-current' : '' %>"></div>
                     <span class="icon-desc fs-h7 fw-bold <%= page === 'itinerary' ? 'icon-current-desc' : '' %>">行程</span>
                 </a>
             </li>
 <!-- nav-icon-map -->
             <li class="nav-item page-item">
-                <a class="nav-link page-link d-flex flex-column align-items-center border-0" href="#">
+                <a class="nav-link page-link d-flex flex-column align-items-center border-0" href="map.html">
                     <div class="icon-map p-1 mb-1"></div>
                     <span class="icon-desc fs-h7 fw-bold">地圖</span>
                 </a>
@@ -24,9 +24,9 @@
             </li>
 <!-- nav-icon-notify -->
             <li class="nav-item page-item">
-                <a class="nav-link page-link d-flex flex-column align-items-center border-0" href="#">
-                    <div class="icon-notify p-1 mb-1"></div>
-                    <span class="icon-desc fs-h7 fw-bold">通知</span>
+                <a class="nav-link page-link d-flex flex-column align-items-center border-0" href="notification.html">
+                    <div class="icon-notify p-1 mb-1 <%= page === 'notification' ? 'icon-notify-current' : '' %>"></div>
+                    <span class="icon-desc fs-h7 fw-bold <%= page === 'notification' ? 'icon-current-desc' : '' %>">通知</span>
                 </a>
             </li>
 <!-- nav-icon-member -->

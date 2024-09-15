@@ -1,0 +1,10 @@
+.notification{
+    z-index: -1;
+    height: calc(100% - 69px);
+    background-color: #fff;
+    .notify-list-style{
+        background-color: #F6F6F6;
+        border: 1px solid $gray-50;
+        box-shadow: 0px 4px 20px 0px #00000014;
+    }
+}
