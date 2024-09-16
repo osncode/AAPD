@@ -17,9 +17,9 @@
             </li>
 <!-- nav-icon-activity -->
             <li class="nav-item page-item currentColor">
-                <a class="nav-link page-link d-flex flex-column align-items-center border-0" href="#">
-                    <div class="icon-activity p-1 mb-1"></div>
-                    <span class="icon-desc fs-h7 fw-bold">探索</span>
+                <a class="nav-link page-link d-flex flex-column align-items-center border-0" href="explore.html">
+                    <div class="icon-activity p-1 mb-1 <%= page === 'explore' ? 'icon-activity-current' : '' %>"></div>
+                    <span class="icon-desc fs-h7 fw-bold <%= page === 'explore' ? 'icon-current-desc' : '' %>">探索</span>
                 </a>
             </li>
 <!-- nav-icon-notify -->
