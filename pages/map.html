@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map</title>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+  </head>
+  <body>
+    <header class="container text-center d-flex fixed-top bg-white align-items-center">
+      <a class="btn position-absolute" href="index.html" role="button"><img src="../assets/icon/icon24px/back.svg" alt="back button"></a>
+      <h1 class="h4 mx-auto my-3 fw-bold text-black position-relative">地圖</h1>
+    </header>
+<!-- 地圖內頁 -->
+    <section class="bgMap vh-100">
+      <div class="container d-flex flex-column h-100">
+        <button class="h5 align-self-start btn btn-outline-gray-50 bg-white d-flex align-items-center mt-4 mb-2 text-gray-600 rounded-4" data-bs-toggle="modal" href="#modalNationalForestRegion" id="NationalForestRegion" type="button">
+          <p class="me-2">選擇國家森林遊樂區</p>
+          <img src="../assets/icon/icon14px/chevron.svg" alt="chevron svg">
+        </button>
+        <!-- 搜尋列 -->
+        <div class="d-flex justify-content-between mb-4">
+          <!-- 搜尋框 -->
+          <form class="input-group align-items-center position-relative me-3" role="search">
+            <!-- 搜尋 ICON -->
+            <img id="searchIcon" role="img" src="../assets/icon/icon20px/search-gray-600.svg" alt="search" class="input-icon position-absolute ms-2 text-black">
+            <!-- 搜尋輸入框 -->
+            <input id="searchInput" class="form-control rounded-4 h5 ps-10" type="search" placeholder="搜尋" aria-label="Search">
+            <!-- 清除 ICON -->
+            <img id="deleteIcon" role="img" src="../assets/icon/icon20px/delete.svg" alt="delete" class="input-icon d-none position-absolute end-0 me-2">
+          </form>
+          <!-- 篩選按鈕 -->
+          <button class="btn btn-outline-gray-50 bg-white  text-gray-600" data-bs-toggle="modal" data-bs-target="#modalFilter" type="button">
+            <img src="../assets/icon/icon24px/filter.svg" alt="filter" class="icon24">
+          </button>
+        </div>
+        <!-- 搜尋區域按鈕 -->
+        <button type="button" class="align-self-center h5 btn btn-primary-600 text-white py-2 px-4 rounded-4">搜尋此區域</button>
+        <button typue="button" class="mt-auto mb-5 align-self-end gps btn btn-primary-600 rounded-circle"><img src="../assets/icon/icon24px/gps-white.svg" alt="gps" class="icon24"></button>
+      </div>
+    </section>
+    <!-- footer -->
+    <button class="resultHeader border-gray-200 bg-white fixed-bottom d-flex flex-column align-items-center rounded-top-4 rounded-bottom-0">
+      <hr class="titleHr mt-2">
+    </button>
+    
+
+    <!-- 搜尋框的X -->
+    <script>
+      const searchInput = document.getElementById('searchInput');
+      const searchIcon = document.getElementById('searchIcon');
+      const clearIcon = document.getElementById('clearIcon');
+    
+      searchInput.addEventListener('input', () => {
+        if (searchInput.value.trim()) {
+          searchIcon.classList.add('d-none');
+          clearIcon.classList.remove('d-none');
+        } else {
+          searchIcon.classList.remove('d-none');
+          clearIcon.classList.add('d-none');
+        }
+      });
+    
+      clearIcon.addEventListener('click', () => {
+        searchInput.value = '';
+        searchInput.focus();
+        searchIcon.classList.remove('d-none');
+        clearIcon.classList.add('d-none');
+      });
+    </script>
+
+    <!-- Modal 國家森林區域 -->
+    <div class="modal-pick-NationalForestRegion">
+      <%- include('./layout/pick-NationalForestRegion'); -%>
+    </div>
+
+    <!-- 篩選filter modal -->
+    <div class="modal fade Filter" id="modalFilter" tabindex="-1" aria-labelledby="FilterModalLabel" aria-hidden="true">
+      <div class="modal-dialog position-absolute bottom-0 left-0 right-0">
+        <div class="modal-content rounded-bottom-0 rounded-top-4">
+          <div class="modal-header px-6 py-2 d-flex justify-content-between align-items-center">
+            <a class="btn" href="map.html" role="button"><img src="../assets/icon/icon24px/back.svg" alt="back button"></a>
+            <h4 class="modal-title text-black fw-bold d-block" id="FilterModalLabel">篩選</h4>
+            <p class="h4 text-gray-600 d-block" id="filterReset">重設</p>
+          </div>
+          <section class="modal-body">
+            <div class="row f-flex flex-wrap g-2">
+              <div class="col-4 ">
+                <button class="btn btn-outline-primary-300 btn-primary-100 w-100 d-flex rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="../assets/icon/icon14px/all.svg" alt="all">
+                  <h5 class="text-primary-600 fw-bold">全部</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="../assets/icon/icon14px/heart.svg" alt="like">
+                  <h5>收藏</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="../assets/icon/icon14px/view.svg" alt="view">
+                  <h5>景點</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="../assets/icon/icon14px/food.svg" alt="food">
+                  <h5>美食</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="../assets/icon/icon14px/shopping.svg" alt="shopping">
+                  <h5>購物</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="../assets/icon/icon14px/bed.svg" alt="hotel">
+                  <h5>住宿</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="../assets/icon/icon14px/parking.svg" alt="parking">
+                  <h5>停車場</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="../assets/icon/icon14px/gas-station.svg" alt="gas-station">
+                  <h5>交通站</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="../assets/icon/icon14px/gas-station.svg" alt="gas-station">
+                  <h5>加油站</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="../assets/icon/icon14px/charging-station.svg" alt="charging-station">
+                  <h5>充電樁</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+    <!-- 篩選modal 確定按鈕 -->
+          <div class="modal-footer item-border pt-3 pb-7 mt-auto bg-white">
+            <input class="btn btn-primary-600 h4 fw-bold rounded-2 w-100 mx-6" type="submit" value="套用">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
