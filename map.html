@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map</title>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <script type="module" crossorigin src="/AAPD/assets/main-4f0e6973.js"></script>
+    <link rel="stylesheet" href="/AAPD/assets/main-cdeb6de5.css">
+  </head>
+  <body>
+    <header class="container text-center d-flex fixed-top bg-white align-items-center">
+      <a class="btn position-absolute" href="index.html" role="button"><img src="/AAPD/assets/back-5a64f715.svg" alt="back button"></a>
+      <h1 class="h4 mx-auto my-3 fw-bold text-black position-relative">地圖</h1>
+    </header>
+<!-- 地圖內頁 -->
+    <section class="bgMap vh-100">
+      <div class="container d-flex flex-column h-100">
+        <button class="h5 align-self-start btn btn-outline-gray-50 bg-white d-flex align-items-center mt-4 mb-2 text-gray-600 rounded-4" data-bs-toggle="modal" href="#modalNationalForestRegion" id="NationalForestRegion" type="button">
+          <p class="me-2">選擇國家森林遊樂區</p>
+          <img src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
+        </button>
+        <!-- 搜尋列 -->
+        <div class="d-flex justify-content-between mb-4">
+          <!-- 搜尋框 -->
+          <form class="input-group align-items-center position-relative me-3" role="search">
+            <!-- 搜尋 ICON -->
+            <img id="searchIcon" role="img" src="/AAPD/assets/search-gray-600-575da8f5.svg" alt="search" class="input-icon position-absolute ms-2 text-black">
+            <!-- 搜尋輸入框 -->
+            <input id="searchInput" class="form-control rounded-4 h5 ps-10" type="search" placeholder="搜尋" aria-label="Search">
+            <!-- 清除 ICON -->
+            <img id="deleteIcon" role="img" src="/AAPD/assets/delete-c058166e.svg" alt="delete" class="input-icon d-none position-absolute end-0 me-2">
+          </form>
+          <!-- 篩選按鈕 -->
+          <button class="btn btn-outline-gray-50 bg-white  text-gray-600" data-bs-toggle="modal" data-bs-target="#modalFilter" type="button">
+            <img src="/AAPD/assets/filter-94c5256b.svg" alt="filter" class="icon24">
+          </button>
+        </div>
+        <!-- 搜尋區域按鈕 -->
+        <button type="button" class="align-self-center h5 btn btn-primary-600 text-white py-2 px-4 rounded-4">搜尋此區域</button>
+        <button typue="button" class="mt-auto mb-5 align-self-end gps btn btn-primary-600 rounded-circle"><img src="/AAPD/assets/gps-white-08dc6bea.svg" alt="gps" class="icon24"></button>
+      </div>
+    </section>
+    <!-- footer -->
+    <button class="resultHeader border-gray-200 bg-white fixed-bottom d-flex flex-column align-items-center rounded-top-4 rounded-bottom-0">
+      <hr class="titleHr mt-2">
+    </button>
+    
+
+    <!-- 搜尋框的X -->
+    <script>
+      const searchInput = document.getElementById('searchInput');
+      const searchIcon = document.getElementById('searchIcon');
+      const clearIcon = document.getElementById('clearIcon');
+    
+      searchInput.addEventListener('input', () => {
+        if (searchInput.value.trim()) {
+          searchIcon.classList.add('d-none');
+          clearIcon.classList.remove('d-none');
+        } else {
+          searchIcon.classList.remove('d-none');
+          clearIcon.classList.add('d-none');
+        }
+      });
+    
+      clearIcon.addEventListener('click', () => {
+        searchInput.value = '';
+        searchInput.focus();
+        searchIcon.classList.remove('d-none');
+        clearIcon.classList.add('d-none');
+      });
+    </script>
+
+    <!-- Modal 國家森林區域 -->
+    <div class="modal-pick-NationalForestRegion">
+      <!-- Modal 國家森林區域  -->
+<div class="modal fade" id="modalNationalForestRegion" tabindex="-1" aria-labelledby="National- Forest-Region-ModalLabel" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-scrollable modal-h-NationalForestRegion position-absolute bottom-0 end-0 start-0">
+    <div class="modal-content rounded-bottom-0 rounded-top-4">
+      <div class="modal-header px-3 py-2 d-flex align-items-center">
+        <a class="btn" data-bs-dismiss="modal" role="button"><img src="/AAPD/assets/back-5a64f715.svg" alt="back button"></a>
+        <div class="ms-center-menu">
+          <h4 class="modal-title text-gray-black fw-bold" id="exampleModalLabel">選擇 國家森林遊樂區</h4>
+        </div>
+      </div>
+      <div class="modal-body p-3">
+<!-- 臺灣北部 -->
+        <section>
+          <h5 class="fw-bold mb-2 text-gray-black">台灣北部</h5>
+          <div class="row py-2">
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">滿月圓</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">東眼山</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">內洞</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">太平山</a>
+            </div>
+          </div>
+        </section>
+<!-- 臺灣中部 -->
+        <section>
+          <h5 class="fw-bold mb-2 text-gray-black">台灣中部</h5>
+          <div class="row py-2">
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">觀霧</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">大雪山</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">武嶺</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">八仙山</a>
+            </div>
+          </div>
+        </section>
+<!-- 臺灣南部 -->
+        <section>
+          <h5 class="fw-bold mb-2 text-gray-black">台灣南部</h5>
+          <div class="row py-2">
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">阿里山</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">合歡山</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">雙流</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">奧萬大</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">藤枝</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">墾丁</a>
+            </div>
+          </div>
+        </section>
+<!-- 臺灣東部 -->
+        <section>
+          <h5 class="fw-bold mb-2 text-gray-black">台灣東部</h5>
+          <div class="row py-2">
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">知本</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">富源</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">向陽</a>
+            </div>
+            <div class="col-4 px-1">
+              <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-2 fs-h5" href="#" role="button">池南</a>
+            </div>
+          </div>
+        </section>
+      </div>
+<!-- 國家森林區域 確定按鈕 -->
+      <div class="modal-footer item-border pt-3 pb-2 mt-auto">
+        <a class="btn btn-primary-600 fs-h4 fw-bold rounded-2 w-100 mx-6" data-bs-dismiss="modal" role="button">確定
+        </a>
+      </div>
+    </div>
+  </div>
+</div>    </div>
+
+    <!-- 篩選filter modal -->
+    <div class="modal fade Filter" id="modalFilter" tabindex="-1" aria-labelledby="FilterModalLabel" aria-hidden="true">
+      <div class="modal-dialog position-absolute bottom-0 left-0 right-0">
+        <div class="modal-content rounded-bottom-0 rounded-top-4">
+          <div class="modal-header px-6 py-2 d-flex justify-content-between align-items-center">
+            <a class="btn" href="map.html" role="button"><img src="/AAPD/assets/back-5a64f715.svg" alt="back button"></a>
+            <h4 class="modal-title text-black fw-bold d-block" id="FilterModalLabel">篩選</h4>
+            <p class="h4 text-gray-600 d-block" id="filterReset">重設</p>
+          </div>
+          <section class="modal-body">
+            <div class="row f-flex flex-wrap g-2">
+              <div class="col-4 ">
+                <button class="btn btn-outline-primary-300 btn-primary-100 w-100 d-flex rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="/AAPD/assets/all-c71cb6a6.svg" alt="all">
+                  <h5 class="text-primary-600 fw-bold">全部</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="/AAPD/assets/heart-5cd0b00e.svg" alt="like">
+                  <h5>收藏</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="/AAPD/assets/view-176ebef9.svg" alt="view">
+                  <h5>景點</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="/AAPD/assets/food-619f9a87.svg" alt="food">
+                  <h5>美食</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="/AAPD/assets/shopping-64d075c4.svg" alt="shopping">
+                  <h5>購物</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="/AAPD/assets/bed-497a615d.svg" alt="hotel">
+                  <h5>住宿</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="/AAPD/assets/parking-77b9f296.svg" alt="parking">
+                  <h5>停車場</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="/AAPD/assets/gas-station-29987aa7.svg" alt="gas-station">
+                  <h5>交通站</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="/AAPD/assets/gas-station-29987aa7.svg" alt="gas-station">
+                  <h5>加油站</h5>
+                </button>
+              </div>
+              <div class="col-4 ">
+                <button class="btn btn-outline-gray-200 w-100 d-flex text-black rounded-4 justify-content-center align-items-center py-2 gap-2"  type="button">
+                  <img src="/AAPD/assets/charging-station-9f3a64fd.svg" alt="charging-station">
+                  <h5>充電樁</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+    <!-- 篩選modal 確定按鈕 -->
+          <div class="modal-footer item-border pt-3 pb-7 mt-auto bg-white">
+            <input class="btn btn-primary-600 h4 fw-bold rounded-2 w-100 mx-6" type="submit" value="套用">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
