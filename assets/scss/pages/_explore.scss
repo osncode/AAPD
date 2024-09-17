@@ -1,4 +1,10 @@
 .explore{
+    .z-index{
+        z-index: 10;
+    }
+    .mt-80px{
+        margin-top: 80px;
+    }
     .btn-link-style{
         background-color: $gray-white;
         display: block;
