@@ -1,9 +1,16 @@
 .explore{
+    .h-80{
+        height: 80%;
+    }
     .z-index{
         z-index: 10;
     }
     .mt-80px{
         margin-top: 80px;
+    }
+    .bg-title{
+    background-color: #fff;
+    padding: 8px 0px 8px 0px;
     }
     .btn-link-style{
         background-color: $gray-white;
