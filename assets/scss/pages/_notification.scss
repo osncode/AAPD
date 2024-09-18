@@ -1,4 +1,8 @@
-.notification{
+.notification-title{
+    z-index: 10;
+}
+
+.notification-list{
     z-index: -1;
     height: calc(100% - 69px);
     background-color: #fff;
