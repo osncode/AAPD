@@ -1,0 +1,45 @@
+.member{
+    .fw-600{
+        font-weight: 600;
+    }
+    .mt-180px{
+        margin-top: 172px;
+    }
+    .default-current-border{
+        border-bottom: 3px solid $primary-600;
+    }
+    .click-status{
+        &:hover{
+            border-bottom: 3px solid $primary-600;
+        }
+    }
+    .click-status-desc{
+        &:hover{
+            color: $primary-600 !important;
+        }
+    }
+    .radius-top-left, .radius-top-left img{
+        border-top-left-radius: 16px;
+        height: 70px;
+        width: 70px;
+    }
+    .radius-top-right, .radius-top-right img{
+        border-top-right-radius: 16px;
+        height: 70px;
+        width: 70px;
+    }
+    .radius-bottom-left, .radius-bottom-left img{
+        border-bottom-left-radius: 16px;
+        height: 70px;
+        width: 70px;
+    }
+    .radius-bottom-right, .radius-bottom-right img{
+        border-bottom-right-radius: 16px;
+        height: 70px;
+        width: 70px;
+    }
+    .overflow-x-scroll{
+        overflow-x: scroll;
+        &::-webkit-scrollbar {display:none}
+    }
+}
