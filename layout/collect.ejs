@@ -1,0 +1,34 @@
+<!-- member-title 收藏 -->
+<div class="d-flex flex-column align-items-center w-100 position-fixed top-0 start-0 end-0 bg-gray-white">
+    <div class="ms-auto pe-6 pt-2">
+        <img src="../assets/icon/icon24px/setting.svg" alt="setting svg">
+    </div>
+<!-- profile photo -->
+    <div class="d-flex me-auto align-items-center ps-4">
+        <div class="flex-shrink-0 position-relative">
+        <img class="rounded-circle object-fit-cover" src="../assets/images/profile-photo.svg" width="64" height="64" alt="andychen jpeg">
+        <a href="#">
+            <img class="position-absolute bottom-0 end-0" src="../assets/icon/member-icon/edit.svg" alt="edit svg"></a>
+        </div>
+        <div class="flex-grow-1 ms-3">
+        <p class="text-gray-black fw-600 fs-h4">Elaine Lin</p>
+        </div>
+    </div>
+<!-- 收藏 / 票券 選單 -->
+    <div class="row w-100 d-flex text-center border-bottom">
+        <section class="w-content">
+            <div class="w-100 col-6 py-3 <%= page === 'member' ? 'click-status' : '' %>">
+                <a class="w-100" href="#">
+                    <h4 class="text-gray-600 fw-bold <%= page === 'member' ? 'click-status-desc' : '' %>">收藏</h4>
+                </a>
+            </div>
+        </section>
+        <section class="w-content">
+            <div class="w-100 col-6 py-3">
+                <a class="w-100" href="member-ticket.html">
+                    <h4 class="text-gray-600 fw-bold">票卷</h4>
+                </a>
+            </div>
+        </section>
+    </div>
+</div>
