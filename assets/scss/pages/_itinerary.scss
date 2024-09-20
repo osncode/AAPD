@@ -1,4 +1,11 @@
 .new-itinerary{
+    .lh-2{
+        line-height: 2;
+    }
+    .px-2px{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
     .ms-center-title{
         margin-left: calc((100% / 2 ) - 90px );
     }
@@ -10,13 +17,13 @@
     }
     .bg-itinerary{
         background-image: url(../images/itinerary-Background.png);
-        height: 90%;
-        width: 90%;
+        // height: 90%;
+        // width: 90%;
         background-size: contain;
     }
 
     .form-content{
-        height: 70%;
+        height: 73%;
     }
 
     .fw-600{
