@@ -67,3 +67,22 @@
         margin: 0;
     }
 }
+.offcanvas.offcanvas-bottom {
+    height: 640px;
+}
+.offcanvasSearch{
+    a.gap-1{
+        width: 104px;
+        height: 46px;
+        padding:12px 20px;
+    }
+    .dot{
+        width: 4px;
+        height: 4px;
+        background-color: $gray-200;
+    }
+    .img20{
+        width: 20px;
+        height: 20px;
+    }
+}
