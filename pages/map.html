@@ -16,7 +16,7 @@
     <section class="bgMap vh-100">
       <div class="container d-flex flex-column h-100">
         <button class="h5 align-self-start btn btn-outline-gray-50 bg-white d-flex align-items-center mt-4 mb-2 text-gray-600 rounded-4" data-bs-toggle="modal" href="#modalNationalForestRegion" id="NationalForestRegion" type="button">
-          <p class="me-2">選擇國家森林遊樂區</p>
+          <p class="h5 me-2">選擇國家森林遊樂區</p>
           <img src="../assets/icon/icon14px/chevron.svg" alt="chevron svg">
         </button>
         <!-- 搜尋列 -->
@@ -37,7 +37,7 @@
         </div>
         <!-- 搜尋區域按鈕 -->
         <button type="button" class="align-self-center h5 btn btn-primary-600 text-white py-2 px-4 rounded-4">搜尋此區域</button>
-        <button typue="button" class="mt-auto mb-8 align-self-end gps btn btn-primary-600 rounded-circle"><img src="../assets/icon/icon24px/gps-white.svg" alt="gps" class="icon24"></button>
+        <button typue="button" class="mt-auto mb-12 align-self-end gps btn btn-primary-600 rounded-circle"><img src="../assets/icon/icon24px/gps-white.svg" alt="gps" class="icon24"></button>
       </div>
       <button class="resultHeader border-gray-200 bg-white fixed-bottom d-flex flex-column align-items-center rounded-top-4 rounded-bottom-0">
         <hr class="titleHr mt-2">
@@ -45,7 +45,7 @@
     </section>
     <!-- footer -->
     
-    <div class="w-100">
+    <div class="w-100 fixed-bottom bg-white">
       <%- include('./layout/footer',{page:"map"}); -%>
     </div>
     
@@ -79,7 +79,7 @@
       <%- include('./layout/pick-NationalForestRegion'); -%>
     </div>
 
-    <!-- 篩選filter modal -->
+    <!-- 篩選Filter modal -->
     <div class="modal fade Filter" id="modalFilter" tabindex="-1" aria-labelledby="FilterModalLabel" aria-hidden="true">
       <div class="modal-dialog position-absolute bottom-0 left-0 right-0 ">
         <div class="modal-content rounded-bottom-0 rounded-top-4">
