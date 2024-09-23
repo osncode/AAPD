@@ -4,6 +4,15 @@
     background-position: center;
     padding-top: 40px;
     padding-bottom:  57px;
+    .form-control{
+        width: 275px;
+        height: 40px;
+    }
+    .searchBtn{
+        font-size: 14px;
+        width: 102px;
+        height: 36px;
+    }
 }
 .input-icon {
     width: 20px;
@@ -19,10 +28,14 @@
 //調整placeholder的字體大小
 #searchInput::placeholder {
     font-size: 14px;
-  }
+}
 .icon24{
     width: 24px;
     height: 24px;
+}
+.icon40{
+    width: 40px;
+    height: 40px;
 }
 .gps{
     width: 44px;
