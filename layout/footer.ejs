@@ -11,8 +11,8 @@
 <!-- nav-icon-map -->
             <li class="nav-item page-item">
                 <a class="nav-link page-link d-flex flex-column align-items-center border-0" href="map.html">
-                    <div class="icon-map p-1 mb-1"></div>
-                    <span class="icon-desc fs-h7 fw-bold">地圖</span>
+                    <div class="icon-map p-1 mb-1 <%= page === 'map' ? 'icon-map-current' : '' %>"></div>
+                    <span class="icon-desc fs-h7 fw-bold <%= page === 'map' ? 'icon-current-desc' : '' %>">地圖</span>
                 </a>
             </li>
 <!-- nav-icon-activity -->
