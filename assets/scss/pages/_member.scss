@@ -1,22 +1,21 @@
 .member{
+    .fw-500{
+        font-weight: 500;
+    }
     .fw-600{
         font-weight: 600;
     }
     .mt-180px{
         margin-top: 172px;
     }
-    .default-current-border{
-        border-bottom: 3px solid $primary-600;
+    .w-content{
+        width: 50%;
     }
     .click-status{
-        &:hover{
-            border-bottom: 3px solid $primary-600;
-        }
+        border-bottom: 3px solid $primary-600;
     }
     .click-status-desc{
-        &:hover{
-            color: $primary-600 !important;
-        }
+        color: $primary-600 !important;
     }
     .radius-top-left, .radius-top-left img{
         border-top-left-radius: 16px;
@@ -41,5 +40,8 @@
     .overflow-x-scroll{
         overflow-x: scroll;
         &::-webkit-scrollbar {display:none}
+    }
+    .radius-shadows{
+        box-shadow: 0px 4px 20px 0px #00000014;
     }
 }

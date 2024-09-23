@@ -1,0 +1,47 @@
+.QR-code{
+    .QR-content{
+        width: 255px;
+        height: 510px;
+    }
+    .fw-600{
+        font-weight: 600;
+    }
+    .ms-55px{
+        margin-left: 55px;
+    }
+    .pt-69px{
+        padding-top: 69px;
+    }
+    .mb-22px{
+        margin-bottom: 22px;
+    }
+    .mb-49px{
+        margin-bottom: 49px;
+    }
+    .w-39px{
+        width: 39px;
+    }
+    .w-32px{
+        width: 32px;
+    }
+    .w-34px{
+        width: 34px;
+    }
+    .w-223px{
+        width: 223px;
+    }
+    .border-bottom-style{
+        // border-bottom: 2px dashed $gray-200;
+        // width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, $gray-200 0%, $gray-200 50%, transparent 50%);
+    background-size: 19px 1px;
+    background-repeat: repeat-x;
+    }
+    .h-510px{
+        height: 510px;
+    }
+    .bg-secondary-50{
+        height: 62%;
+    }
+}

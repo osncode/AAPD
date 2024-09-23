@@ -1,0 +1,17 @@
+.setting{
+    .ms-center-title{
+        margin-left: calc((100% / 2 ) - 66px );
+    }
+    .fw-500{
+        font-weight: 500;
+    }
+    .item-border{
+        border-top: 1px solid $gray-200;
+        box-shadow: 0px -4px 20px 0px #00000014;
+    }
+    .btn-hover-none{
+        &:hover, &:active, &:focus{
+        background-color: #fff!important;
+        }
+    }
+}
