@@ -44,4 +44,7 @@
     .bg-secondary-50{
         height: 62%;
     }
+    .modal{
+        $modal-backdrop-opacity:  false !important;
+    }
 }

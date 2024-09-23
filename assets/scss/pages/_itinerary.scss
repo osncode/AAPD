@@ -17,8 +17,6 @@
     }
     .bg-itinerary{
         background-image: url(../images/itinerary-Background.png);
-        // height: 90%;
-        // width: 90%;
         background-size: contain;
     }
 
@@ -33,15 +31,6 @@
         font-weight: 500;
     }
 
-    .hover-active{
-        &:hover, &:active{
-            background-color: $primary-100!important;
-            color: $primary-600!important;
-            font-weight: bold;
-            border: 1px solid $primary-300!important;
-        }
-    }
-
     .home-indicator{
         width: 139px;
         height: 5px;
@@ -51,9 +40,6 @@
     .item-border{
         border-top: 1px solid $gray-200;
         box-shadow: 0px -4px 20px 0px #00000014;
-    }
-    .modal-h-NationalForestRegion{
-        height: 70%;
     }
 
 }
@@ -90,4 +76,27 @@
     top: 102%;
     left: 2.5%;
     width: 95%;
+}
+
+// 全域樣式
+.modal-h-NationalForestRegion{
+    height: 70%!important;
+}
+
+.hover-active{
+    &:hover, &:active{
+        background-color: $primary-100!important;
+        color: $primary-600!important;
+        font-weight: bold!important;
+        border: 1px solid $primary-300!important;
+    }
+}
+
+.ms-center-menu{
+    margin-left: calc((100% / 2 ) - 123.62px );
+}
+
+.px-2px{
+    padding-left: 2px;
+    padding-right: 2px;
 }
