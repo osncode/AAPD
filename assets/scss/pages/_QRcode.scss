@@ -44,7 +44,18 @@
     .bg-secondary-50{
         height: 62%;
     }
-    .modal{
-        $modal-backdrop-opacity:  false !important;
+    .QR-cdoe-circle-left{
+        background-color: black;
+        width: 42px;
+        height: 42px;
+        top: -22px;
+        left: -32px;
+    }
+    .QR-cdoe-circle-right{
+        background-color: black;
+        width: 42px;
+        height: 42px;
+        top: -22px;
+        right: -32px;
     }
 }

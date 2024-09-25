@@ -3,7 +3,7 @@
     <!-- Modal -->
     <div class="modal fade" id="QR-codeModal" tabindex="-1" aria-labelledby="QR-codeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered justify-content-center">
-        <div class="modal-content QR-content">
+        <div class="modal-content QR-content rounded-top-2">
           <div class="modal-body h-510px px-0">
             <section class="px-4">
               <div class="d-flex align-items-center w-223px mb-22px">
@@ -18,7 +18,6 @@
                 <div class="ms-3 w-32px">
                   <span class="fs-h4 fw-600 text-gray-black ">全票</span>
                 </div>
-            <!--  -->
                 <div class="d-flex flex-column ms-55px w-39px">
                   <small class="fs-h7 fw-600 text-gry-600">人數</small>
                   <small class="fs-h7 text-gray-400">People</small>
@@ -44,8 +43,11 @@
                 </div>
               </div>
             </section>
-            <section class="bg-secondary-50 pb-8 pt-69px border-bottom-style px-12 rounded-2">
+            <section class="bg-secondary-50 pt-69px border-bottom-style px-12 rounded-2 position-relative">
+              <div class="rounded-circle position-absolute QR-cdoe-circle-left"></div>
+              <div class="rounded-circle position-absolute QR-cdoe-circle-right"></div>
               <div><img src="../assets/images/QR.svg" alt="QR code"></div>
+              <div class="text-center"><small class="fs-h6 text-gray-600">訂單編號 : 24NA20240811</small></div>
             </section>
           </div>
         </div>
