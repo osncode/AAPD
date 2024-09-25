@@ -31,12 +31,11 @@
         width: 223px;
     }
     .border-bottom-style{
-        // border-bottom: 2px dashed $gray-200;
-        // width: 100%;
     height: 1px;
     background-image: linear-gradient(to right, $gray-200 0%, $gray-200 50%, transparent 50%);
-    background-size: 19px 1px;
+    background-size: 18.7px 1px;
     background-repeat: repeat-x;
+    padding-left: 1px;
     }
     .h-510px{
         height: 510px;
@@ -57,5 +56,8 @@
         height: 42px;
         top: -22px;
         right: -32px;
+    }
+    .QR-cdoe-delete{
+        background-color: black;
     }
 }
