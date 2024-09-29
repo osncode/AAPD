@@ -72,20 +72,6 @@
         content:"";
         background-image: url("../assets/icon/Explore-icon/heart-yes-white.svg");
     }
-    
-    // [type="checkbox"]{
-    //     &:checked ~ div{
-            // .add{
-            //     display: block !important;
-            // }
-            // .del{
-            //     display: block !important;
-    //         }
-    //     }
-    // }
-    //    [class="modal-open"] ~ .del{
-    //             display: block;
-    //    } 
 
     .bookmark-modal-content{
         width: 138px;
@@ -93,10 +79,4 @@
         margin: 0 auto;
     }
 
-    .add-bookmark{
-        z-index: 1200;
-    }
-    .del-bookmark{
-        z-index: 1200;
-    }
 }
