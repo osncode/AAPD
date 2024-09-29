@@ -50,4 +50,53 @@
     .placeholder-style::-moz-placeholder { 
         color: $gray-400; /* 支援 Firefox 18- */
      }
+    .explore-01-bookmark label, .explore-02-bookmark label{
+        cursor: pointer;
+      }
+    .explore-01-bookmark input[type="checkbox"], .explore-02-bookmark input[type="checkbox"]{
+        display: none;
+
+      }
+    .explore-01-bookmark input[type="checkbox"] + label::before, .explore-02-bookmark input[type="checkbox"] + label::before{
+        content:"";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url("../assets/icon/Explore-icon/heart-no-white.svg");
+        background-size: contain;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;    
+      }
+    .explore-01-bookmark input[type="checkbox"]:checked + label::before, .explore-02-bookmark input[type="checkbox"]:checked + label::before{
+        content:"";
+        background-image: url("../assets/icon/Explore-icon/heart-yes-white.svg");
+    }
+    
+    // [type="checkbox"]{
+    //     &:checked ~ div{
+            // .add{
+            //     display: block !important;
+            // }
+            // .del{
+            //     display: block !important;
+    //         }
+    //     }
+    // }
+    //    [class="modal-open"] ~ .del{
+    //             display: block;
+    //    } 
+
+    .bookmark-modal-content{
+        width: 138px;
+        height: 88px;
+        margin: 0 auto;
+    }
+
+    .add-bookmark{
+        z-index: 1200;
+    }
+    .del-bookmark{
+        z-index: 1200;
+    }
 }

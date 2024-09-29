@@ -8,7 +8,7 @@
 
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
   </head>
-  <body>
+  <body>   
     <div class="explore container d-flex flex-column align-items-center vh-100 position-relative">
           <div class="container px-0 text-center position-fixed top-0 start-0 end-0 z-index">
             <h4 class="fw-bold mb-4 text-gray-black w-100 bg-title">探索靈感</h4>
@@ -31,11 +31,16 @@
                 <div class="position-relative">
                     <div class="d-flex justify-content-between position-absolute top-0 pt-4 px-4 w-100">
                         <h6 class="bg-secondary-500 text-gray-white fw-bold d-inline-block py-1 px-2 rounded-1">三日遊</h6>
-                        <a href="#">
-                          <img src="../assets/icon/Explore-icon/heart-no-white.svg" alt="heart icon">
-                        </a>
+<!-- explore-01-bookmark -->
+                          <div class="explore-01-bookmark" id="add-bookmark" data-bs-toggle="modal" data-bs-target="#add-explore-01-bookmarkModal">
+                              <input type="checkbox" id="explore-01-bookmark-checkbox">
+                              <label for="explore-01-bookmark-checkbox">
+                              </label>
+                          </div> 
+
                     </div>
-                    <img src="../assets/images/explore-01.png" class="card-img-top rounded-top-4 w-100 h-100" alt="explore-01 image">
+                    <a class="w-100 h-100" href="attractions.html">
+                      <img src="../assets/images/explore-01.png" class="card-img-top rounded-top-4 w-100 h-100" alt="explore-01 image"></a>
                     <div class="position-absolute bottom-0 pb-4 ps-4">
                         <div class="mb-2">
                             <h3 class="text-gray-white fw-bold">內洞國家森林遊樂區</h3>
@@ -71,9 +76,11 @@
                 <div class="position-relative">
                     <div class="d-flex justify-content-between position-absolute top-0 pt-4 px-4 w-100">
                         <h6 class="bg-secondary-500 text-gray-white fw-bold d-inline-block py-1 px-2 rounded-1">一日遊</h6>
-                        <a href="#">
-                          <img src="../assets/icon/Explore-icon/heart-no-white.svg" alt="heart icon">
-                        </a>
+<!-- bookmark -->
+                        <div class="explore-02-bookmark">
+                          <input type="checkbox" id="explore-02-bookmark-checkbox">
+                          <label for="explore-02-bookmark-checkbox"></label>
+                        </div>
                     </div>
                     <img src="../assets/images/explore-02.png" class="card-img-top rounded-top-4 w-100 h-100" alt="explore-01 image">
                     <div class="position-absolute bottom-0 pb-4 ps-4">
@@ -106,6 +113,49 @@
                 </div>
             </div>
         </main>
+
+<!-- 全集中呼吸 -->
+
+<!-- 加入收藏 Modal -->
+  <div class="modal add-modal" id="add-explore-01-bookmarkModal" tabindex="-1" aria-labelledby="explore-01-bookmarkModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bookmark-modal-content bg-primary-400 border-0 transition-duration-fade">
+        <div class="modal-body bg-primary-400 text-center rounded-3">
+          <div>
+            <img src="../assets/icon/Explore-icon/check-circle.svg" alt="check-circle svg">
+          </div>
+          <div>
+            <small class="fs-h4 text-gray-white fw-bold">加入收藏</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- 刪除收藏 Modal -->
+<div class="modal del-mode" id="del-explore-01-bookmarkModal" tabindex="-1" aria-labelledby="del-explore-01-bookmarkModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bookmark-modal-content bg-primary-400 border-0 transition-duration-fade">
+      <div class="modal-body bg-primary-400 text-center rounded-3">
+        <div>
+          <img src="../assets/icon/Explore-icon/check-circle.svg" alt="check-circle svg">
+        </div>
+        <div>
+          <small class="fs-h4 text-gray-white fw-bold">刪除收藏</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
   <!-- footer -->
         <div class="position-fixed bottom-0 start-0 end-0 bg-gray-white">
             <%- include('./layout/footer',{page:"explore"}); -%>
@@ -118,6 +168,29 @@
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- If CDN fails to load, serve up the local version -->
     <script>window.JQuery || document.write('<script src="includes/js/jquery-2.1.4.min.js"><\/script>');</script>
-    
+
+    <!-- <script>
+      $(document).ready(function(){
+          $("a").click(function(){
+            $("#explore-01-bookmarkModal").fadeTo("slow",0);
+          });
+        });
+    </script> -->
+<!-- add -->
+    <script>
+      $("#add-bookmark").click(function(){
+      $("#add-explore-01-bookmarkModal").show();
+      setTimeout(function(){
+          $("#add-explore-01-bookmarkModal").modal('hide')
+      //     setTimeout(function(){
+      // document.getElementById("add-bookmark").id = 'del-bookmark';
+      // let el = document.querySelector('.explore-01-bookmark');
+      //   el.setAttribute('data-bs-target','#del-explore-01-bookmarkModal');
+      // }, 500);
+      }, 2000);
+    });
+  </script>
+<!-- del -->
+
   </body>
 </html>
