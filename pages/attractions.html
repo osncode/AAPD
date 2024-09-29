@@ -9,7 +9,7 @@
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
   </head>
   <body>
-    <div class="attractions container px-0 vh-100 w-100">
+    <div class="attractions container px-0 vh-100 w-100 d-flex flex-column">
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -33,175 +33,177 @@
             </div>
         </div>
 <!-- attractions-main -->
-        <main class="attractions-main p-6">
-            <section class="d-flex justify-content-between mb-3">
-                <div>
-                    <div><h3 class="fs-h3">內洞國家森林遊樂區</h3></div>
-                    <div class="d-flex mt-1">
-                        <img class="text-gray-600" src="../assets/icon/attractions-icon/location-gray-600.svg" alt="location-gray-600 svg">
-                        <small class="fs-h6 text-gray-600 ms-1">新北市烏來區</small>
-                    </div>
-                </div>
-                <div>
-                    <div class="d-flex">
-                        <img src="../assets/icon/attractions-icon/star-14px.svg" alt="star-14px svg">
-                        <h4 class="fs-h6 text-gray-black fw-bold ms-1">4.3</h4>
-                    </div>
-                    <div class="text-end"><small class="fs-h7 text-gray-600 fw-400">(4,643)</small></div>
-                </div>
-            </section>
-<!-- Tag -->
-            <div class="mb-3">
-                <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">溪流</span>
-
-                <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">賞蛙</span>
-
-                <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">蕨類</span>
-
-                <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">瀑布</span>
-
-                <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">陰離子</span>
-
-                <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">杜鵑</span>
-
-                <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">螢火蟲</span>
-            </div>
-            <div>
-                <p class="fs-h5 text-gray-black">
-                瀑聲隆隆，依山傍水的蕨類樂園，小巧精緻的內洞國家森林遊樂區，是南勢溪上游一個享受寧靜與綠意的好所在。
-                <!-- <span class="fs-h5 text-gray-black fw-bold"> ...</span> -->
-                </p>
-                <div class="collapse" id="collapseIntro">
-                    <div class="card card-body px-0 border-0">
-                        <p class="fs-h5 text-gray-black">
-                        距新店約50分鐘，內洞可說是大台北地區交通最方便的國家森林遊樂區，海拔在230~800公尺之間，被內洞溪流貫，潮濕而溫暖，是名副其實的蕨類樂園：光觀瀑步道的短短數百公尺，就能發現將近65種蕨類，包括稀有的垂枝馬尾杉與藤蕨等，都是大樹身上附生的嬌客。而這裡舊稱「娃娃谷」，相傳是因為蛙類眾多，在夜裡暢鳴的聲響迴盪山谷而得，步道旁的水溝就有機會見到青蛙的身影喔！  內洞瀑布是遊樂區的主角，在觀瀑步道終點，有著二層不同的風貌帶給遊人們多元享受，與暢快的負離子芬芳。炎炎夏日，不妨從悶熱的都市出走，到內洞國家森林遊樂區享受一個清涼的午後森林浴吧！</p>
-                    </div>
-                </div>
-                <a class="btn-icon-transform w-100 text-center collapsed" data-bs-toggle="collapse" href="#collapseIntro" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    <small class="text-primary-600 fs-h5">查看更多</small>
-                    <img class="initial-scale" src="../assets/icon/attractions-icon/arrow-up.svg" alt="arrow-up svg">
-                </a>
-            </div>
-<!-- 收費標準 -->
-            <section class="mt-12">
-                <div class="border-start border-4 border-secondary-500 mb-3">
-                    <h4 class="fs-h4 text-gray-black fw-bold ms-2">收費標準</h4>
-                </div>
-            <!-- 全票 · 平日 -->
-                <div class="border-style rounded-4 py-3 px-4 mb-4">
-                    <div class="mb-1">
-                        <h4 class="fs-h4 text-gray-black fw-bold">全票 · 平日</h4>
-                    </div>
-                    <div class="mb-2">
-                        <small class="fs-h6 text-gray-600">一般成人</small>
-                    </div>
-                    <div class="text-end">
-                        <h3 class="fs-h3 fw-bold text-gray-black">$65</h3>
-                    </div>
-                </div>
-            <!-- 全票 · 假日 -->
-                <div class="border-style rounded-4 py-3 px-4 mb-4">
-                    <div class="mb-1">
-                        <h4 class="fs-h4 text-gray-black fw-bold">全票 · 假日</h4>
-                    </div>
-                    <div class="mb-2">
-                        <small class="fs-h6 text-gray-600">一般成人</small>
-                    </div>
-                    <div class="text-end">
-                        <h3 class="fs-h3 fw-bold text-gray-black">$80</h3>
-                    </div>
-                </div>
-            <!-- 查看更多 票價 -->
-                <div class="collapse" id="collapseTicket">
-                    <div class="card card-body py-0 px-0 border-0">
-                        <!-- 半票 -->
-                        <div class="border-style rounded-4 py-3 px-4 mb-4">
-                            <div class="mb-1">
-                                <h4 class="fs-h4 text-gray-black fw-bold">半票</h4>
-                            </div>
-                            <div class="mb-2">
-                                <small class="fs-h6 text-gray-600 d-block">· 軍警人員持有証件者</small>
-                                <small class="fs-h6 text-gray-600 d-block">· 學生 ( 憑學生證 )、兒童 ( 7歲至12 )。</small>
-                                <small class="fs-h6 text-gray-600 d-block">· 新北市市民憑證明文件者。</small>
-                            </div>
-                            <div class="text-end">
-                                <h3 class="fs-h3 fw-bold text-gray-black">$40</h3>
-                            </div>
-                        </div>
-                        <!-- 團體票 -->
-                        <div class="border-style rounded-4 py-3 px-4 mb-4">
-                            <div class="mb-1">
-                                <h4 class="fs-h4 text-gray-black fw-bold">團體票</h4>
-                            </div>
-                            <div class="mb-2">
-                                <small class="fs-h6 text-gray-600 d-block">· 限20人以上團體</small>
-                            </div>
-                            <div class="text-end">
-                                <h3 class="fs-h3 fw-bold text-gray-black">$65</h3>
-                            </div>
-                        </div>
-                        <!-- 優待票 -->
-                        <div class="border-style rounded-4 py-3 px-4 mb-4">
-                            <div class="mb-1">
-                                <h4 class="fs-h4 text-gray-black fw-bold">優待票</h4>
-                            </div>
-                            <div class="mb-2">
-                                <small class="fs-h6 text-gray-600 d-block">· 3至6歲兒童及65歲以上年長者</small>
-                            </div>
-                            <div class="text-end">
-                                <h3 class="fs-h3 fw-bold text-gray-black">$10</h3>
-                            </div>
+        <main class="position-relative h-100">
+            <div class="position-absolute position-style border-top rounded-3 p-6">
+                <section class="d-flex justify-content-between mb-3">
+                    <div>
+                        <div><h3 class="fs-h3">內洞國家森林遊樂區</h3></div>
+                        <div class="d-flex mt-1">
+                            <img class="text-gray-600" src="../assets/icon/attractions-icon/location-gray-600.svg" alt="location-gray-600 svg">
+                            <small class="fs-h6 text-gray-600 ms-1">新北市烏來區</small>
                         </div>
                     </div>
-                </div>
-                <a class="btn-icon-transform w-100 text-center collapsed" data-bs-toggle="collapse" href="#collapseTicket" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    <small class="text-primary-600 fs-h5">查看更多</small>
-                    <img class="initial-scale" src="../assets/icon/attractions-icon/arrow-up.svg" alt="arrow-up svg">
-                </a>
-            </section>
-<!-- 一週天氣 -->
-            <!-- <div class="mt-12">
-                <div class="border-start border-4 border-secondary-500 mb-3">
-                    <h4 class="fs-h4 text-gray-black fw-bold ms-2">一週天氣</h4>
-                </div>
-                <section class="d-flex w-100 position-relative">
-                    <div class="position-absolute start-0 top-0">
-                        <img src="" alt="">
-                    </div>
-                    <div class="bg-primary-600 pt-4 d-flex w-191px h-212px ms-auto rounded-top-2">
-                        <div class="ms-5 me-26px">
-                            <small class="fs-h6 text-gray-white d-block mb-2">降雨機率</small>
-                            <small class="fs-h6 text-gray-white d-block mb-2">紫外線指數</small>
-                            <small class="fs-h6 text-gray-white d-block mb-2">日出時間</small>
-                            <small class="fs-h6 text-gray-white d-block">日落時間</small>
+                    <div>
+                        <div class="d-flex">
+                            <img src="../assets/icon/attractions-icon/star-14px.svg" alt="star-14px svg">
+                            <h4 class="fs-h6 text-gray-black fw-bold ms-1">4.3</h4>
                         </div>
-                        <div>
-                            <small class="fs-h6 text-gray-white d-block mb-2">90%</small>
-                            <small class="fs-h6 text-gray-white d-block mb-2">中量級</small>
-                            <small class="fs-h6 text-gray-white d-block mb-2">05:37</small>
-                            <small class="fs-h6 text-gray-white d-block">18:13</small>
-                        </div>
-
-                        <div>
-                            <div>
-                                <img src="">
-                            </div>
-                            <div>
-                                <img src="">
-                            </div>
-                        </div>
+                        <div class="text-end"><small class="fs-h7 text-gray-600 fw-400">(4,643)</small></div>
                     </div>
                 </section>
-            </div> -->
-<!-- 園區地圖 -->
-            <section class="mt-12">
-                <div class="border-start border-4 border-secondary-500 mb-3">
-                    <h4 class="fs-h4 text-gray-black fw-bold ms-2">園區地圖</h4>
+    <!-- Tag -->
+                <div class="mb-3">
+                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">溪流</span>
+
+                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">賞蛙</span>
+
+                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">蕨類</span>
+
+                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">瀑布</span>
+
+                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">陰離子</span>
+
+                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">杜鵑</span>
+
+                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-medium text-primary-600">螢火蟲</span>
                 </div>
                 <div>
-                    <img src="../assets/icon/attractions-icon/map.svg" alt="map svg">
+                    <p class="fs-h5 text-gray-black">
+                    瀑聲隆隆，依山傍水的蕨類樂園，小巧精緻的內洞國家森林遊樂區，是南勢溪上游一個享受寧靜與綠意的好所在。
+                    <!-- <span class="fs-h5 text-gray-black fw-bold"> ...</span> -->
+                    </p>
+                    <div class="collapse" id="collapseIntro">
+                        <div class="card card-body px-0 border-0">
+                            <p class="fs-h5 text-gray-black">
+                            距新店約50分鐘，內洞可說是大台北地區交通最方便的國家森林遊樂區，海拔在230~800公尺之間，被內洞溪流貫，潮濕而溫暖，是名副其實的蕨類樂園：光觀瀑步道的短短數百公尺，就能發現將近65種蕨類，包括稀有的垂枝馬尾杉與藤蕨等，都是大樹身上附生的嬌客。而這裡舊稱「娃娃谷」，相傳是因為蛙類眾多，在夜裡暢鳴的聲響迴盪山谷而得，步道旁的水溝就有機會見到青蛙的身影喔！  內洞瀑布是遊樂區的主角，在觀瀑步道終點，有著二層不同的風貌帶給遊人們多元享受，與暢快的負離子芬芳。炎炎夏日，不妨從悶熱的都市出走，到內洞國家森林遊樂區享受一個清涼的午後森林浴吧！</p>
+                        </div>
+                    </div>
+                    <a class="btn-icon-transform w-100 text-center collapsed" data-bs-toggle="collapse" href="#collapseIntro" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <small class="text-primary-600 fs-h5">查看更多</small>
+                        <img class="initial-scale" src="../assets/icon/attractions-icon/arrow-up.svg" alt="arrow-up svg">
+                    </a>
                 </div>
-            </section>
+    <!-- 收費標準 -->
+                <section class="mt-12">
+                    <div class="border-start border-4 border-secondary-500 mb-3">
+                        <h4 class="fs-h4 text-gray-black fw-bold ms-2">收費標準</h4>
+                    </div>
+                <!-- 全票 · 平日 -->
+                    <div class="border-style rounded-4 py-3 px-4 mb-4">
+                        <div class="mb-1">
+                            <h4 class="fs-h4 text-gray-black fw-bold">全票 · 平日</h4>
+                        </div>
+                        <div class="mb-2">
+                            <small class="fs-h6 text-gray-600">一般成人</small>
+                        </div>
+                        <div class="text-end">
+                            <h3 class="fs-h3 fw-bold text-gray-black">$65</h3>
+                        </div>
+                    </div>
+                <!-- 全票 · 假日 -->
+                    <div class="border-style rounded-4 py-3 px-4 mb-4">
+                        <div class="mb-1">
+                            <h4 class="fs-h4 text-gray-black fw-bold">全票 · 假日</h4>
+                        </div>
+                        <div class="mb-2">
+                            <small class="fs-h6 text-gray-600">一般成人</small>
+                        </div>
+                        <div class="text-end">
+                            <h3 class="fs-h3 fw-bold text-gray-black">$80</h3>
+                        </div>
+                    </div>
+                <!-- 查看更多 票價 -->
+                    <div class="collapse" id="collapseTicket">
+                        <div class="card card-body py-0 px-0 border-0">
+                            <!-- 半票 -->
+                            <div class="border-style rounded-4 py-3 px-4 mb-4">
+                                <div class="mb-1">
+                                    <h4 class="fs-h4 text-gray-black fw-bold">半票</h4>
+                                </div>
+                                <div class="mb-2">
+                                    <small class="fs-h6 text-gray-600 d-block">· 軍警人員持有証件者</small>
+                                    <small class="fs-h6 text-gray-600 d-block">· 學生 ( 憑學生證 )、兒童 ( 7歲至12 )。</small>
+                                    <small class="fs-h6 text-gray-600 d-block">· 新北市市民憑證明文件者。</small>
+                                </div>
+                                <div class="text-end">
+                                    <h3 class="fs-h3 fw-bold text-gray-black">$40</h3>
+                                </div>
+                            </div>
+                            <!-- 團體票 -->
+                            <div class="border-style rounded-4 py-3 px-4 mb-4">
+                                <div class="mb-1">
+                                    <h4 class="fs-h4 text-gray-black fw-bold">團體票</h4>
+                                </div>
+                                <div class="mb-2">
+                                    <small class="fs-h6 text-gray-600 d-block">· 限20人以上團體</small>
+                                </div>
+                                <div class="text-end">
+                                    <h3 class="fs-h3 fw-bold text-gray-black">$65</h3>
+                                </div>
+                            </div>
+                            <!-- 優待票 -->
+                            <div class="border-style rounded-4 py-3 px-4 mb-4">
+                                <div class="mb-1">
+                                    <h4 class="fs-h4 text-gray-black fw-bold">優待票</h4>
+                                </div>
+                                <div class="mb-2">
+                                    <small class="fs-h6 text-gray-600 d-block">· 3至6歲兒童及65歲以上年長者</small>
+                                </div>
+                                <div class="text-end">
+                                    <h3 class="fs-h3 fw-bold text-gray-black">$10</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn-icon-transform w-100 text-center collapsed" data-bs-toggle="collapse" href="#collapseTicket" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <small class="text-primary-600 fs-h5">查看更多</small>
+                        <img class="initial-scale" src="../assets/icon/attractions-icon/arrow-up.svg" alt="arrow-up svg">
+                    </a>
+                </section>
+    <!-- 一週天氣 -->
+                <!-- <div class="mt-12">
+                    <div class="border-start border-4 border-secondary-500 mb-3">
+                        <h4 class="fs-h4 text-gray-black fw-bold ms-2">一週天氣</h4>
+                    </div>
+                    <section class="d-flex w-100 position-relative">
+                        <div class="position-absolute start-0 top-0">
+                            <img src="" alt="">
+                        </div>
+                        <div class="bg-primary-600 pt-4 d-flex w-191px h-212px ms-auto rounded-top-2">
+                            <div class="ms-5 me-26px">
+                                <small class="fs-h6 text-gray-white d-block mb-2">降雨機率</small>
+                                <small class="fs-h6 text-gray-white d-block mb-2">紫外線指數</small>
+                                <small class="fs-h6 text-gray-white d-block mb-2">日出時間</small>
+                                <small class="fs-h6 text-gray-white d-block">日落時間</small>
+                            </div>
+                            <div>
+                                <small class="fs-h6 text-gray-white d-block mb-2">90%</small>
+                                <small class="fs-h6 text-gray-white d-block mb-2">中量級</small>
+                                <small class="fs-h6 text-gray-white d-block mb-2">05:37</small>
+                                <small class="fs-h6 text-gray-white d-block">18:13</small>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <img src="">
+                                </div>
+                                <div>
+                                    <img src="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div> -->
+    <!-- 園區地圖 -->
+                <section class="mt-12">
+                    <div class="border-start border-4 border-secondary-500 mb-3">
+                        <h4 class="fs-h4 text-gray-black fw-bold ms-2">園區地圖</h4>
+                    </div>
+                    <div>
+                        <img src="../assets/icon/attractions-icon/map.svg" alt="map svg">
+                    </div>
+                </section>
+            </div>
         </main>
 
     </div><!-- container 結尾 -->   
