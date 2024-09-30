@@ -33,9 +33,9 @@
                         <h6 class="bg-secondary-500 text-gray-white fw-bold d-inline-block py-1 px-2 rounded-1">三日遊</h6>
 <!-- explore-01-bookmark -->
                           <div class="explore-01-bookmark" id="add-bookmark" data-bs-toggle="modal" data-bs-target="#add-explore-01-bookmarkModal">
-                              <input type="checkbox" id="explore-01-bookmark-checkbox">
-                              <label for="explore-01-bookmark-checkbox">
-                              </label>
+                              <input class="item-check" type="checkbox" id="explore-01-bookmark-checkbox">
+                              <i class="item-check-icon">
+                              </i>
                           </div> 
                     </div>
                     <img src="../assets/images/explore-01.png" class="card-img-top rounded-top-4 w-100 h-100" alt="explore-01 image">
@@ -172,19 +172,19 @@
         });
     </script> -->
 <!-- add -->
-    <!-- <script>
+    <script>
       $("#add-bookmark").click(function(){
       $("#add-explore-01-bookmarkModal").show();
       setTimeout(function(){
-          $("#add-explore-01-bookmarkModal").modal('hide') -->
+          $("#add-explore-01-bookmarkModal").modal('hide')
       //     setTimeout(function(){
       // document.getElementById("add-bookmark").id = 'del-bookmark';
       // let el = document.querySelector('.explore-01-bookmark');
       //   el.setAttribute('data-bs-target','#del-explore-01-bookmarkModal');
       // }, 500);
-      <!-- }, 2000);
+       }, 2000);
     });
-  </script> -->
+  </script>
 <!-- del -->
 
   </body>

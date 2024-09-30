@@ -51,17 +51,14 @@
     .placeholder-style::-moz-placeholder { 
         color: $gray-400; /* 支援 Firefox 18- */
      }
-    //  .card-title{
-    //     z-index: 1070!important;
-    //  }
 
-    .explore-01-bookmark label, .explore-02-bookmark label{
+    .explore-01-bookmark .item-check-icon, .explore-02-bookmark label{
         cursor: pointer;
       }
-    .explore-01-bookmark input[type="checkbox"], .explore-02-bookmark input[type="checkbox"]{
+    .explore-01-bookmark .item-check[type="checkbox"], .explore-02-bookmark input[type="checkbox"]{
         display: none;
       }
-    .explore-01-bookmark input[type="checkbox"] + label::before, 
+    .explore-01-bookmark .item-check[type="checkbox"] + .item-check-icon::before, 
     .explore-02-bookmark input[type="checkbox"] + label::before{
         content:"";
         display: inline-block;
@@ -72,7 +69,7 @@
         // margin-right: 5px;
         // top: 2px;    
       }
-    .explore-01-bookmark input[type="checkbox"]:checked + label::before, 
+    .explore-01-bookmark .item-check[type="checkbox"]:checked + .item-check-icon::before, 
     .explore-02-bookmark input[type="checkbox"]:checked + label::before{
         content:"";
         background-image: url("../assets/icon/Explore-icon/heart-yes-white.svg");
