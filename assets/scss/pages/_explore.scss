@@ -51,36 +51,27 @@
     .placeholder-style::-moz-placeholder { 
         color: $gray-400; /* 支援 Firefox 18- */
      }
-     .explore-01-bookmark{
-        position: static;
-        z-index: 50;
-     }
-
-    .explore-01-bookmark .item-check-icon, .explore-02-bookmark label{
+    .explore-01-bookmark label, .explore-02-bookmark label{
         cursor: pointer;
       }
-    .explore-01-bookmark .item-check[type="checkbox"], .explore-02-bookmark input[type="checkbox"]{
+    .explore-01-bookmark input[type="checkbox"], .explore-02-bookmark input[type="checkbox"]{
         display: none;
+
       }
-    .explore-01-bookmark .item-check[type="checkbox"] + .item-check-icon::before, 
-    .explore-02-bookmark input[type="checkbox"] + label::before{
-        content:url("../assets/icon/Explore-icon/heart-no-white.svg");
+    .explore-01-bookmark input[type="checkbox"] + label::before, .explore-02-bookmark input[type="checkbox"] + label::before{
+        content:"";
         display: inline-block;
         width: 24px;
         height: 24px;
-        // background-image: url("../assets/icon/Explore-icon/heart-no-white.svg");
-        position: static;
-        z-index: 60;
+        background-image: url("../assets/icon/Explore-icon/heart-no-white.svg");
         background-size: contain;
-        // margin-right: 5px;
-        // top: 2px;    
+        margin-right: 5px;
+        position: relative;
+        top: 2px;    
       }
-    .explore-01-bookmark .item-check[type="checkbox"]:checked + .item-check-icon::before, 
-    .explore-02-bookmark input[type="checkbox"]:checked + label::before{
-        content:url("../assets/icon/Explore-icon/heart-yes-white.svg");
-        // background-image: url("../assets/icon/Explore-icon/heart-yes-white.svg");
-        position: static;
-        z-index: 60;
+    .explore-01-bookmark input[type="checkbox"]:checked + label::before, .explore-02-bookmark input[type="checkbox"]:checked + label::before{
+        content:"";
+        background-image: url("../assets/icon/Explore-icon/heart-yes-white.svg");
     }
 
     .bookmark-modal-content{

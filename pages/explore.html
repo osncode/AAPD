@@ -29,14 +29,23 @@
         <main class="w-100 mt-8">
             <div class="card w-100 rounded-4 border-0 card-shadow mb-6 mt-80px" style="width: 18rem;">
                 <div class="position-relative">
-                    <div class="d-flex justify-content-between position-absolute top-0 pt-4 px-4 w-100 align-items-center z-index">
+                    <div class="d-flex justify-content-between position-absolute top-0 pt-4 px-4 w-100 align-items-center">
                         <h6 class="bg-secondary-500 text-gray-white fw-bold d-inline-block py-1 px-2 rounded-1">三日遊</h6>
 <!-- explore-01-bookmark -->
                           <div class="explore-01-bookmark" id="add-bookmark" data-bs-toggle="modal" data-bs-target="#add-explore-01-bookmarkModal">
-                              <input class="item-check" type="checkbox" id="explore-01-bookmark-checkbox">
-                              <i class="item-check-icon">
-                              </i>
+                              <input type="checkbox" id="explore-01-bookmark-checkbox">
+                              <label for="explore-01-bookmark-checkbox">
+                              </label>
+                        <!-- 加入收藏 btn -->
+                              <!-- <div id="add-bookmark" data-bs-target="#add-explore-01-bookmarkModal" data-bs-toggle="modal">
+                                <img src="../assets/icon/Explore-icon/heart-no-white.svg" alt="heart-no-white svg">
+                              </div> -->
+                        <!-- 刪除收藏 btn -->
+                              <!-- <div id="del-bookmark" data-bs-target="#del-explore-01-bookmarkModal" data-bs-toggle="modal">
+                                <img src="../assets/icon/Explore-icon/heart-yes-white.svg" alt="heart-yes-white svg">
+                              </div> -->
                           </div> 
+
                     </div>
                     <img src="../assets/images/explore-01.png" class="card-img-top rounded-top-4 w-100 h-100" alt="explore-01 image">
                     <div class="position-absolute bottom-0 pb-4 ps-4">
@@ -118,38 +127,44 @@
 <!-- 全集中呼吸 -->
 
 <!-- 加入收藏 Modal -->
-      <div class="container">
-        <div class="modal add-modal" id="add-explore-01-bookmarkModal" tabindex="-1" aria-labelledby="explore-01-bookmarkModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered bookmark-modal-content">
-            <div class="modal-content bg-primary-400 border-0 transition-duration-fade">
-              <div class="modal-body bg-primary-400 text-center rounded-3">
-                <div>
-                  <img src="../assets/icon/Explore-icon/check-circle.svg" alt="check-circle svg">
-                </div>
-                <div>
-                  <small class="fs-h4 text-gray-white fw-bold">加入收藏</small>
-                </div>
-              </div>
-            </div>
+  <div class="modal add-modal" id="add-explore-01-bookmarkModal" tabindex="-1" aria-labelledby="explore-01-bookmarkModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bookmark-modal-content bg-primary-400 border-0 transition-duration-fade">
+        <div class="modal-body bg-primary-400 text-center rounded-3">
+          <div>
+            <img src="../assets/icon/Explore-icon/check-circle.svg" alt="check-circle svg">
+          </div>
+          <div>
+            <small class="fs-h4 text-gray-white fw-bold">加入收藏</small>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
 <!-- 刪除收藏 Modal -->
-        <div class="modal del-mode" id="del-explore-01-bookmarkModal" tabindex="-1" aria-labelledby="del-explore-01-bookmarkModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered bookmark-modal-content">
-            <div class="modal-content bg-primary-400 border-0 transition-duration-fade">
-              <div class="modal-body bg-primary-400 text-center rounded-3">
-                <div>
-                  <img src="../assets/icon/Explore-icon/check-circle.svg" alt="check-circle svg">
-                </div>
-                <div>
-                  <small class="fs-h4 text-gray-white fw-bold">刪除收藏</small>
-                </div>
-              </div>
-            </div>
-          </div>
+<div class="modal del-mode" id="del-explore-01-bookmarkModal" tabindex="-1" aria-labelledby="del-explore-01-bookmarkModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bookmark-modal-content bg-primary-400 border-0 transition-duration-fade">
+      <div class="modal-body bg-primary-400 text-center rounded-3">
+        <div>
+          <img src="../assets/icon/Explore-icon/check-circle.svg" alt="check-circle svg">
         </div>
+        <div>
+          <small class="fs-h4 text-gray-white fw-bold">刪除收藏</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
 
   <!-- footer -->
         <div class="position-fixed bottom-0 start-0 end-0 bg-gray-white">
@@ -171,6 +186,7 @@
           });
         });
     </script> -->
+    document.querySelector('div').getAttribute('class');
 <!-- add -->
     <script>
       $("#add-bookmark").click(function(){
@@ -182,7 +198,7 @@
       // let el = document.querySelector('.explore-01-bookmark');
       //   el.setAttribute('data-bs-target','#del-explore-01-bookmarkModal');
       // }, 500);
-       }, 2000);
+      }, 2000);
     });
   </script>
 <!-- del -->
