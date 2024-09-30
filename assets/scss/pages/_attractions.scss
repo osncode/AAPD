@@ -38,5 +38,33 @@
         background-color: #fff;
         box-shadow: 0px 4px 20px 0px #00000014;
     }
+    .bg-weather{
+        background-color: $primary-600;
+        width: 191px;
+        height: 212px;
+    }
 
+    .weather-info{
+        background-image: url("../assets/icon/attractions-icon/weather-info-card.svg");
+        height: 237px;
+        width: 148px;
+    }
+    .mb-33px{
+        margin-bottom: 33px;
+    }
+    .h-237px{
+        height: 237px;
+    }
+    .weather-tag-space{
+        width: 179px;
+        height: 110px;
+    }
+    .overflow-x-scroll{
+        overflow-x: scroll;
+        &::-webkit-scrollbar {display:none}
+    }
+    .weather-tag{
+        width: 62px !important;
+        height: 110px;
+    }
 }
