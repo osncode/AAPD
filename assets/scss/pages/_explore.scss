@@ -63,7 +63,7 @@
         display: inline-block;
         width: 24px;
         height: 24px;
-        background-image: url("../assets/icon/Explore-icon/heart-no-white.svg");
+        background-image: url("../icon/Explore-icon/heart-no-white.svg");
         background-size: contain;
         margin-right: 5px;
         position: relative;
@@ -71,7 +71,7 @@
       }
     .explore-01-bookmark input[type="checkbox"]:checked + label::before, .explore-02-bookmark input[type="checkbox"]:checked + label::before{
         content:"";
-        background-image: url("../assets/icon/Explore-icon/heart-yes-white.svg");
+        background-image: url("../icon/Explore-icon/heart-yes-white.svg");
     }
 
     .bookmark-modal-content{
