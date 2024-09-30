@@ -56,9 +56,9 @@
       }
     .explore-01-bookmark input[type="checkbox"], .explore-02-bookmark input[type="checkbox"]{
         display: none;
-
       }
-    .explore-01-bookmark input[type="checkbox"] + label::before, .explore-02-bookmark input[type="checkbox"] + label::before{
+    .explore-01-bookmark input[type="checkbox"] + label::before, 
+    .explore-02-bookmark input[type="checkbox"] + label::before{
         content:"";
         display: inline-block;
         width: 24px;
@@ -69,7 +69,8 @@
         position: relative;
         top: 2px;    
       }
-    .explore-01-bookmark input[type="checkbox"]:checked + label::before, .explore-02-bookmark input[type="checkbox"]:checked + label::before{
+    .explore-01-bookmark input[type="checkbox"]:checked + label::before, 
+    .explore-02-bookmark input[type="checkbox"]:checked + label::before{
         content:"";
         background-image: url("../assets/icon/Explore-icon/heart-yes-white.svg");
     }
