@@ -67,12 +67,14 @@
         background-size: contain;
         margin-right: 5px;
         position: relative;
-        top: 2px;    
+        top: 2px;  
+        z-index: 1070;  
       }
     .explore-01-bookmark input[type="checkbox"]:checked + label::before, 
     .explore-02-bookmark input[type="checkbox"]:checked + label::before{
         content:"";
         background-image: url("../assets/icon/Explore-icon/heart-yes-white.svg");
+        z-index: 1070;  
     }
 
     .bookmark-modal-content{
