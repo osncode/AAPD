@@ -64,11 +64,11 @@
       }
     .explore-01-bookmark .item-check[type="checkbox"] + .item-check-icon::before, 
     .explore-02-bookmark input[type="checkbox"] + label::before{
-        content:"";
+        content:url("../assets/icon/Explore-icon/heart-no-white.svg");
         display: inline-block;
         width: 24px;
         height: 24px;
-        background-image: url("../assets/icon/Explore-icon/heart-no-white.svg");
+        // background-image: url("../assets/icon/Explore-icon/heart-no-white.svg");
         position: static;
         z-index: 60;
         background-size: contain;
@@ -77,8 +77,8 @@
       }
     .explore-01-bookmark .item-check[type="checkbox"]:checked + .item-check-icon::before, 
     .explore-02-bookmark input[type="checkbox"]:checked + label::before{
-        content:"";
-        background-image: url("../assets/icon/Explore-icon/heart-yes-white.svg");
+        content:url("../assets/icon/Explore-icon/heart-yes-white.svg");
+        // background-image: url("../assets/icon/Explore-icon/heart-yes-white.svg");
         position: static;
         z-index: 60;
     }
