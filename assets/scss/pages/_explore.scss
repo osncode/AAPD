@@ -51,6 +51,10 @@
     .placeholder-style::-moz-placeholder { 
         color: $gray-400; /* 支援 Firefox 18- */
      }
+     .card-title{
+        z-index: 1070!important;
+     }
+
     .explore-01-bookmark label, .explore-02-bookmark label{
         cursor: pointer;
       }
