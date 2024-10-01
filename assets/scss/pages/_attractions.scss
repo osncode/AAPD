@@ -69,4 +69,32 @@
         width: 62px !important;
         height: 110px;
     }
+    .attractions-bookmark label{
+        cursor: pointer;
+      }
+    .attractions-bookmark input[type="checkbox"]{
+        display: none;
+
+      }
+    .attractions-bookmark input[type="checkbox"] + label::before{
+        content:"";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url("../icon/attractions-icon/heart-location.svg");
+        background-size: contain;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;    
+      }
+    .attractions-bookmark input[type="checkbox"]:checked + label::before{
+        content:"";
+        background-image: url("../icon/attractions-icon/heart-location-check.svg");
+    }
+}
+
+.bookmark-modal-content{
+    width: 138px !important;
+    height: 88px;
+    margin: 0 auto;
 }
