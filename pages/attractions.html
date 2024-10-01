@@ -19,7 +19,13 @@
             <div class="carousel-inner position-relative">
                 <div class="carousel-title-control position-absolute top-0 w-100 mt-6 px-6 d-flex justify-content-between z-index">
                         <div><a href="explore.html"><img src="../assets/icon/attractions-icon/prev-24px.svg" alt="prev icon"></a></div>
-                        <div><img src="../assets/icon/attractions-icon/heart-location.svg" alt="heart-location svg"></div>
+
+                <!-- attractions-bookmark -->
+                        <div class="attractions-bookmark" id="add-bookmark" data-bs-toggle="modal" data-bs-target="#add-bookmarkModal">
+                            <input type="checkbox" id="attractions-bookmark-checkbox">
+                            <label for="attractions-bookmark-checkbox">
+                            </label>
+                        </div> 
                 </div>
                 <div class="carousel-item active" data-bs-interval="1000">
                     <img src="../assets/images/carousel-01.png" class="d-block w-100" alt="carousel-01 png">
@@ -44,10 +50,10 @@
                         </div>
                     </div>
                     <div>
-                        <div class="d-flex">
+                        <a class="d-flex" href="attractions-review.html">
                             <img src="../assets/icon/attractions-icon/star-14px.svg" alt="star-14px svg">
                             <h4 class="fs-h6 text-gray-black fw-bold ms-1">4.3</h4>
-                        </div>
+                        </a>
                         <div class="text-end"><small class="fs-h7 text-gray-600 fw-400">(4,643)</small></div>
                     </div>
                 </section>
@@ -161,7 +167,7 @@
                     </a>
                 </section>
     <!-- 一週天氣 -->
-                <div class="mt-12 z-index">
+                <div class="mt-12 z-index border-bottom pb-6">
                     <div class="border-start border-4 border-secondary-500 mb-3">
                         <h4 class="fs-h4 text-gray-black fw-bold ms-2">一週天氣</h4>
                     </div>
@@ -299,7 +305,7 @@
                 </div>
 
     <!-- 園區地圖 -->
-                <section class="mt-12">
+                <section class="mt-6 border-bottom pb-6">
                     <div class="border-start border-4 border-secondary-500 mb-3">
                         <h4 class="fs-h4 text-gray-black fw-bold ms-2">園區地圖</h4>
                     </div>
@@ -307,10 +313,160 @@
                         <img class="w-100" src="../assets/icon/attractions-icon/map.svg" alt="map svg">
                     </div>
                 </section>
+    <!-- 服務時間 -->
+                <div class="mt-6 mb-10">
+                    <div class="border-start border-4 border-secondary-500 mb-3">
+                        <h4 class="fs-h4 text-gray-black fw-bold ms-2">服務時間</h4>
+                    </div>
+                    <div class="px-6">
+                        <div class="d-flex justify-content-between mb-1">
+                            <small class="fs-h4 text-gray-600">星期一</small>
+                            <small class="fs-h4 text-gray-600">09:00-17:30</small>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                            <small class="fs-h4 text-gray-600">星期二</small>
+                            <small class="fs-h4 text-gray-600">09:00-17:30</small>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                            <small class="fs-h4 text-gray-600">星期三</small>
+                            <small class="fs-h4 text-secondary-600">休館</small>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                            <small class="fs-h4 text-gray-600">星期四</small>
+                            <small class="fs-h4 text-gray-600">09:00-17:30</small>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                            <small class="fs-h4 text-gray-600">星期五</small>
+                            <small class="fs-h4 text-gray-600">09:00-17:30</small>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                            <small class="fs-h4 text-gray-600">星期六</small>
+                            <small class="fs-h4 text-primary-500">營業時間可能有所變動</small>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <small class="fs-h4 text-gray-600">星期日</small>
+                            <small class="fs-h4 text-primary-500">營業時間可能有所變動</small>
+                        </div>
+                    </div>
+                </div>
+    <!-- 聯絡資訊 -->
+                <section class="mt-6 border-bottom pb-6">
+                    <div class="border-start border-4 border-secondary-500 mb-3">
+                        <h4 class="fs-h4 text-gray-black fw-bold ms-2">聯絡資訊</h4>
+                    </div>
+                    <div class="px-6">
+                        <div>
+                            <small class="fs-h4 text-gray-600">電話：(02)26617358</small>
+                        </div>
+                    </div>
+                </section>
+    <!-- 入園需知 -->
+                <div class="mt-6 pb-6">
+                    <div class="border-start border-4 border-secondary-500 mb-3">
+                        <h4 class="fs-h4 text-gray-black fw-bold ms-2">入園需知</h4>
+                    </div>
+                    <div class="py-4 px-3">
+                        <div class="d-flex align-items-start border-bottom pb-6">
+                            <img class="mt-3" src="../assets/icon/attractions-icon/Ellipse-34.svg" alt="Ellipse svg">
+                            <div class="ms-2">
+                                <small class="fs-h4 text-gray-600 lh-1-6">自 111 年 8 月 1 日起有條件開放犬、貓及其他哺乳類動物進入內洞國家森林遊樂區觀瀑步道，請依規填寫入園切結書。(管理站提供寄放服務)</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start border-bottom pb-6 mt-6">
+                            <img class="mt-3" src="../assets/icon/attractions-icon/Ellipse-34.svg" alt="Ellipse svg">
+                            <div class="ms-2">
+                                <small class="fs-h4 text-gray-600 lh-1-6">瀑布及溪流石頭濕滑，禁止跨越欄杆，進入危險區域。</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start border-bottom pb-6 mt-6">
+                            <img class="mt-3" src="../assets/icon/attractions-icon/Ellipse-34.svg" alt="Ellipse svg">
+                            <div class="ms-2">
+                                <small class="fs-h4 text-gray-600 lh-1-6">禁止狩獵或騷擾野生動植物。</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start border-bottom pb-6 mt-6">
+                            <img class="mt-3" src="../assets/icon/attractions-icon/Ellipse-34.svg" alt="Ellipse svg">
+                            <div class="ms-2">
+                                <small class="fs-h4 text-gray-600 lh-1-6">請隨手做環保，垃圾減量及分類或自行攜出。</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start border-bottom pb-6 mt-6">
+                            <img class="mt-3" src="../assets/icon/attractions-icon/Ellipse-34.svg" alt="Ellipse svg">
+                            <div class="ms-2">
+                                <small class="fs-h4 text-gray-600 lh-1-6">請勿攜帶或引入外來的動植物。</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start border-bottom pb-6 mt-6">
+                            <img class="mt-3" src="../assets/icon/attractions-icon/Ellipse-34.svg" alt="Ellipse svg">
+                            <div class="ms-2">
+                                <small class="fs-h4 text-gray-600 lh-1-6">請學習並尊重社區的生活與文化</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <footer class="container bg-gray-white item-border pt-3 pb-2 px-6 mt-auto bottom-0 w-100 position-fixed footer-z-index">
+                <a class="btn btn-primary-600 next-step fs-h4 fw-bold rounded-2 mb-2 d-block" href="#" role="button">前往購票</a>
+            </footer>
         </main>
+<!-- footer -->
+
+<!-- 加入收藏 Modal -->
+                <div class="container">
+                    <div class="modal add-modal fade" id="add-bookmarkModal" tabindex="-1" aria-labelledby="explore-01-bookmarkModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered bookmark-modal-content">
+                        <div class="modal-content bg-primary-400 border-0 transition-duration-fade bookmark-modal-content">
+                          <div class="modal-body bg-primary-400 text-center rounded-3">
+                            <div>
+                              <img src="../assets/icon/Explore-icon/check-circle.svg" alt="check-circle svg">
+                            </div>
+                            <div>
+                              <small class="fs-h4 text-gray-white fw-bold">加入收藏</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+<!-- 刪除收藏 Modal -->
+                  <div class="modal del-mode fade" id="del-bookmarkModal" tabindex="-1" aria-labelledby="del-explore-01-bookmarkModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered bookmark-modal-content">
+                      <div class="modal-content bg-primary-400 border-0 transition-duration-fade">
+                        <div class="modal-body bg-primary-400 text-center rounded-3">
+                          <div>
+                            <img src="../assets/icon/Explore-icon/check-circle.svg" alt="check-circle svg">
+                          </div>
+                          <div>
+                            <small class="fs-h4 text-gray-white fw-bold">刪除收藏</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
     </div><!-- container 結尾 -->   
     <script type="module" src="../main.js"></script>
+        <!-- load the CDN first-->
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <!-- If CDN fails to load, serve up the local version -->
+        <script>window.JQuery || document.write('<script src="includes/js/jquery-2.1.4.min.js"><\/script>');</script>
+    <!-- add -->
+    <script>
+        $("#add-bookmark").click(function(){
+        $("#add-bookmarkModal").show();
+        setTimeout(function(){
+            $("#add-bookmarkModal").modal('hide');
+                setTimeout(function(){
+                  $("#add-bookmarkModal").remove();
+            document.getElementById("add-bookmark").id = 'del-bookmark';
+            let el = document.querySelector('.attractions-bookmark');
+              el.setAttribute('data-bs-target','#del-bookmarkModal');
+              }, 500);
+        $('.modal').modal('hide'); 
+        $('.modal-backdrop').remove(); 
+        }, 1000);
+      });
+    </script>
   </body>
 </html>

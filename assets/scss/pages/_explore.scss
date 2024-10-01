@@ -1,4 +1,4 @@
-.explore{
+.explore-html{
     // box-shadow: 0px 4px 20px 0px #00000014;
     .h-80{
         height: 80%;
@@ -23,6 +23,10 @@
     }
     .fw-500{
         font-weight: 500;
+    }
+    .decoration-box{
+        width: 24px;
+        height: 3px;
     }
     .card-shadow{
         box-shadow: 0px 4px 20px 0px #00000014;
@@ -73,6 +77,9 @@
         content:"";
         background-image: url("../icon/Explore-icon/heart-yes-white.svg");
     }
+    .modal-backdrop{
+        opacity: 0 !important;
+      }
 
 }
 
