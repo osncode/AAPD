@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" class="notification-html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,12 +9,12 @@
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
   </head>
   <body>
-    <div class="notification container vh-100 position-relative">
-      <div class="notification-title container text-center position-fixed top-0 start-0 end-0 bg-gray-white">
+    <div class="notification container vh-100 position-relative bg-box-shadow">
+      <div class="notification-title container text-center position-fixed top-0 start-0 end-0 bg-gray-white bg-box-shadow-no-bottom">
         <h4 class="fw-bold text-gray-black py-2">通知</h4>
       </div>
-      <div class="notification-list mt-10">
-        <div class="list-group">
+      <div class="notification-list h-100 mt-5">
+        <div class="list-group pt-27px">
           <section class="notify-list-style rounded-2 mb-3">
             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
               <div class="d-flex align-items-center justify-content-center">
@@ -36,7 +36,7 @@
             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
               <div class="d-flex align-items-center justify-content-center">
                 <div>
-                  <img src="../assets/icon/icon24px(weather)/thermometer-sun-yellow.svg" alt="wind svg">
+                  <img src="../assets/icon/icon24px(weather)/thermometer-sun-yellow.svg" alt="thermometer svg">
                 </div>
                 <div class="ms-3">
                   <div class="d-flex w-100 justify-content-between">
@@ -53,7 +53,7 @@
             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
               <div class="d-flex align-items-center justify-content-center">
                 <div>
-                  <img src="../assets/icon/icon24px(weather)/snow-yellow.svg" alt="wind svg">
+                  <img src="../assets/icon/icon24px(weather)/snow-yellow.svg" alt="snow svg">
                 </div>
                 <div class="ms-3">
                   <div class="d-flex w-100 justify-content-between">
@@ -70,7 +70,7 @@
               <a href="#" class="list-group-item list-group-item-action" aria-current="true">
                 <div class="d-flex align-items-center justify-content-center">
                   <div>
-                    <img src="../assets/icon/icon24px(weather)/tsunami-yellow.svg" alt="wind svg">
+                    <img src="../assets/icon/icon24px(weather)/tsunami-yellow.svg" alt="tsunami svg">
                   </div>
                   <div class="ms-3">
                     <div class="d-flex w-100 justify-content-between">
@@ -87,7 +87,7 @@
               <a href="#" class="list-group-item list-group-item-action" aria-current="true">
                 <div class="d-flex align-items-center justify-content-center">
                   <div>
-                    <img src="../assets/icon/icon24px(weather)/tornado-yellow.svg" alt="wind svg">
+                    <img src="../assets/icon/icon24px(weather)/tornado-yellow.svg" alt="tornado svg">
                   </div>
                   <div class="ms-3">
                     <div class="d-flex w-100 justify-content-between">
@@ -100,11 +100,11 @@
               </a>
             </section>
 <!-- 6 -->
-            <section class="notify-list-style rounded-2">
+            <section class="notify-list-style rounded-2 mb-3">
               <a href="#" class="list-group-item list-group-item-action" aria-current="true">
                 <div class="d-flex align-items-center justify-content-center">
                   <div>
-                    <img src="../assets/icon/icon24px(weather)/tornado-yellow.svg" alt="wind svg">
+                    <img src="../assets/icon/icon24px(weather)/tornado-yellow.svg" alt="tornado svg">
                   </div>
                   <div class="ms-3">
                     <div class="d-flex w-100 justify-content-between">
@@ -112,6 +112,23 @@
                       <small class="fs-h7 text-gray-600">2024/7/23 晚上 11 點</small>
                     </div>
                     <p class="mb-1 fs-h6 fw-500 text-gray-black">颱風即將於今日下午在宜蘭縣登陸，預計將帶來強風和暴雨，請居民立即做好防颱準備，確保門窗牢固，儲備足夠的食物和飲水，並盡量避免外出。</p>
+                  </div>
+                </div>
+              </a>
+            </section>
+<!-- 7 -->
+            <section class="notify-list-style rounded-2">
+              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex align-items-center justify-content-center">
+                  <div>
+                    <img src="../assets/icon/icon24px(weather)/lightning-rain-yellow.svg" alt="lightning-rain svg">
+                  </div>
+                  <div class="ms-3">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 text-gray-black fw-600">大雷雨警告</h5>
+                      <small class="fs-h7 text-gray-600">2024/7/23 晚上 8 點</small>
+                    </div>
+                    <p class="mb-1 fs-h6 fw-500 text-gray-black">高雄市三民區今日傍晚有大雷雨警報，建議市民取消戶外活動，留在安全的室內地點。</p>
                   </div>
                 </div>
               </a>

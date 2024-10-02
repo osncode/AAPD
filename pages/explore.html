@@ -9,7 +9,7 @@
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
   </head>
   <body>   
-    <div class="explore container d-flex flex-column align-items-center vh-100 position-relative">
+    <div class="explore container d-flex flex-column align-items-center h-100 position-relative bg-box-shadow">
           <div class="container px-0 text-center position-fixed top-0 start-0 end-0 z-index">
             <h4 class="fw-bold mb-4 text-gray-black w-100 bg-title">探索靈感</h4>
             <div class="d-flex mb-4 px-3">
@@ -19,161 +19,148 @@
                       <input type="text" class="text-gray-400 fs-h5 outline-none placeholder-style" placeholder="輸入森林遊樂區"></input> 
                   </a>
               </div>
-              <div class="ms-3 ">
-                  <a class="btn rounded-2 btn-link-style p-2" href="#">
+              <div class="ms-3">
+                  <a class="btn rounded-2 btn-link-style p-2 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">
                       <img src="../assets/icon/Explore-icon/filter-gray-600-24px.svg" alt="filter svg">
                   </a>
               </div>
             </div>
           </div>
-        <main class="w-100 mt-8">
-            <div class="card w-100 rounded-4 border-0 card-shadow mb-6 mt-80px" style="width: 18rem;">
-                <div class="position-relative">
-                    <div class="d-flex justify-content-between position-absolute top-0 pt-4 px-4 w-100 align-items-center">
-                        <h6 class="bg-secondary-500 text-gray-white fw-bold d-inline-block py-1 px-2 rounded-1">三日遊</h6>
-<!-- explore-01-bookmark -->
-                          <div class="explore-01-bookmark" id="add-bookmark-01" data-bs-toggle="modal" data-bs-target="#add-explore-01-bookmarkModal">
-                              <input type="checkbox" id="explore-01-bookmark-checkbox">
-                              <label for="explore-01-bookmark-checkbox">
-                              </label>
-                          </div> 
+          <main class="w-100 mt-8">
+              <div class="card w-100 rounded-4 border-0 card-shadow mb-6 mt-80px" style="width: 18rem;">
+                  <div class="position-relative">
+                      <div class="d-flex justify-content-between position-absolute top-0 pt-4 px-4 w-100 align-items-center">
+                          <h6 class="bg-secondary-500 text-gray-white fw-bold d-inline-block py-1 px-2 rounded-1">三日遊</h6>
+  <!-- explore-01-bookmark -->
+                            <div class="explore-01-bookmark" id="add-bookmark-01" data-bs-toggle="modal" data-bs-target="#add-explore-01-bookmarkModal">
+                                <input type="checkbox" id="explore-01-bookmark-checkbox">
+                                <label for="explore-01-bookmark-checkbox">
+                                </label>
+                            </div> 
 
+                      </div>
+                      <a class="w-100 h-100" href="attractions.html">
+                        <img src="../assets/images/explore-01.png" class="card-img-top rounded-top-4 w-100 h-100" alt="explore-01 image"></a>
+                      <div class="position-absolute bottom-0 pb-4 ps-4">
+                          <div class="mb-2">
+                              <h3 class="text-gray-white fw-bold">內洞國家森林遊樂區</h3>
+                          </div>
+                          <div class="d-flex">
+                              <img src="../assets/icon/Explore-icon/location-gray-200.svg" alt="location svg">
+                              <h6 class="ms-1 text-gray-white fw-500">新北市烏來區</h6>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card-body pt-2">
+                    <div class="d-flex justify-content-center mb-3">
+                      <div class="bg-secondary-500 decoration-box"></div>
+                      <div class="bg-gray-200 border-0 ms-2 decoration-box"></div>
+                      <div class="bg-gray-200 border-0 ms-2 decoration-box"></div>
                     </div>
-                    <a class="w-100 h-100" href="attractions.html">
-                      <img src="../assets/images/explore-01.png" class="card-img-top rounded-top-4 w-100 h-100" alt="explore-01 image"></a>
-                    <div class="position-absolute bottom-0 pb-4 ps-4">
+                    <div class="d-flex mb-2">
+                      <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">溪流</span>
+                      <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">賞蛙</span>
+                      <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">蕨類</span>
+                      <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">瀑布</span>
+                      <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">陰離子</span>
+                      <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">杜鵑</span>
+                    </div>
+                    <div>
+                      <img src="../assets/icon/Explore-icon/heart-gray-400-12px.svg" alt="heart svg">
+                      <h7 class="fs-h7 text-gray-400 fw-500">271 · 3458 人使用此行程</h7>
+                    </div>
+                  </div>
+              </div>
+  <!-- card-2 -->
+              <div class="card w-100 rounded-4 border-0 card-shadow mb-20" style="width: 18rem;">
+                  <div class="position-relative">
+                      <div class="d-flex justify-content-between position-absolute top-0 pt-4 px-4 w-100 align-items-center">
+                          <h6 class="bg-secondary-500 text-gray-white fw-bold d-inline-block py-1 px-2 rounded-1">一日遊</h6>
+  <!-- bookmark -->
+                          <div class="explore-02-bookmark" id="add-bookmark-02" data-bs-toggle="modal" data-bs-target="#add-explore-02-bookmarkModal">
+                            <input type="checkbox" id="explore-02-bookmark-checkbox">
+                            <label for="explore-02-bookmark-checkbox">
+                            </label>
+                        </div> 
+                      </div>
+                      <img src="../assets/images/explore-02.png" class="card-img-top rounded-top-4 w-100 h-100" alt="explore-01 image">
+                      <div class="position-absolute bottom-0 pb-4 ps-4">
                         <div class="mb-2">
-                            <h3 class="text-gray-white fw-bold">內洞國家森林遊樂區</h3>
+                            <h3 class="text-gray-white fw-bold">杉林溪森林遊樂區</h3>
                         </div>
                         <div class="d-flex">
                             <img src="../assets/icon/Explore-icon/location-gray-200.svg" alt="location svg">
-                            <h6 class="ms-1 text-gray-white fw-500">新北市烏來區</h6>
+                            <h6 class="ms-1 text-gray-white fw-500">南投縣竹山鎮</h6>
                         </div>
-                    </div>
-                </div>
-                <div class="card-body pt-2">
-                  <div class="d-flex justify-content-center mb-3">
-                    <div class="bg-secondary-500 decoration-box"></div>
-                    <div class="bg-gray-200 border-0 ms-2 decoration-box"></div>
-                    <div class="bg-gray-200 border-0 ms-2 decoration-box"></div>
-                  </div>
-                  <div class="d-flex mb-2">
-                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">溪流</span>
-                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">賞蛙</span>
-                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">蕨類</span>
-                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">瀑布</span>
-                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">陰離子</span>
-                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">杜鵑</span>
-                  </div>
-                  <div>
-                    <img src="../assets/icon/Explore-icon/heart-gray-400-12px.svg" alt="heart svg">
-                    <h7 class="fs-h7 text-gray-400 fw-500">271 · 3458 人使用此行程</h7>
-                  </div>
-                </div>
-            </div>
-<!-- card-2 -->
-            <div class="card w-100 rounded-4 border-0 card-shadow mb-20" style="width: 18rem;">
-                <div class="position-relative">
-                    <div class="d-flex justify-content-between position-absolute top-0 pt-4 px-4 w-100 align-items-center">
-                        <h6 class="bg-secondary-500 text-gray-white fw-bold d-inline-block py-1 px-2 rounded-1">一日遊</h6>
-<!-- bookmark -->
-
-                        <div class="explore-02-bookmark" id="add-bookmark-02" data-bs-toggle="modal" data-bs-target="#add-explore-02-bookmarkModal">
-                          <input type="checkbox" id="explore-02-bookmark-checkbox">
-                          <label for="explore-02-bookmark-checkbox">
-                          </label>
-                      </div> 
-                    </div>
-                    <img src="../assets/images/explore-02.png" class="card-img-top rounded-top-4 w-100 h-100" alt="explore-01 image">
-                    <div class="position-absolute bottom-0 pb-4 ps-4">
-                      <div class="mb-2">
-                          <h3 class="text-gray-white fw-bold">杉林溪森林遊樂區</h3>
                       </div>
-                      <div class="d-flex">
-                          <img src="../assets/icon/Explore-icon/location-gray-200.svg" alt="location svg">
-                          <h6 class="ms-1 text-gray-white fw-500">南投縣竹山鎮</h6>
-                      </div>
+                  </div>
+                  <div class="card-body pt-2">
+                    <div class="d-flex justify-content-center mb-3">
+                      <div class="bg-secondary-500 decoration-box"></div>
+                      <div class="bg-gray-200 border-0 ms-2 decoration-box"></div>
+                      <div class="bg-gray-200 border-0 ms-2 decoration-box"></div>
                     </div>
-                </div>
-                <div class="card-body pt-2">
-                  <div class="d-flex justify-content-center mb-3">
-                    <div class="bg-secondary-500 decoration-box"></div>
-                    <div class="bg-gray-200 border-0 ms-2 decoration-box"></div>
-                    <div class="bg-gray-200 border-0 ms-2 decoration-box"></div>
+                    <div class="d-flex mb-2 align-items-center">
+                      <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">杉林溪</span>
+                      <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">森林浴</span>
+                      <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">健行步道</span>
+                      <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">生態觀察</span>
+                      <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">自然景觀</span>
+                    </div>
+                    <div>
+                      <img src="../assets/icon/Explore-icon/heart-gray-400-12px.svg" alt="heart svg">
+                      <h7 class="fs-h7 text-gray-400 fw-500">693 · 8437 人使用此行程</h7>
+                    </div>
                   </div>
-                  <div class="d-flex mb-2 align-items-center">
-                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">杉林溪</span>
-                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">森林浴</span>
-                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">健行步道</span>
-                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">生態觀察</span>
-                    <span class="badge badge-outline-style rounded-pill fs-h7 py-1 px-2 fw-500 ms-1 text-primary-600">自然景觀</span>
-                  </div>
-                  <div>
-                    <img src="../assets/icon/Explore-icon/heart-gray-400-12px.svg" alt="heart svg">
-                    <h7 class="fs-h7 text-gray-400 fw-500">693 · 8437 人使用此行程</h7>
-                  </div>
-                </div>
-            </div>
-        </main>
+              </div>
+          </main>
+  <!-- footer -->
+          <div class="position-fixed bottom-0 start-0 end-0 bg-gray-white">
+            <%- include('./layout/footer',{page:"explore"}); -%>
+          </div>
     </div>
 
-    <!-- 全集中呼吸 -->
-
-        <!-- 加入收藏 Modal -->
-        <div class="container">
-          <div class="modal add-modal fade" id="add-explore-01-bookmarkModal" tabindex="-1" aria-labelledby="explore-01-bookmarkModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered bookmark-modal-content">
-              <div class="modal-content bg-primary-400 border-0 transition-duration-fade bookmark-modal-content">
-                <div class="modal-body bg-primary-400 text-center rounded-3">
-                  <div>
-                    <img src="../assets/icon/Explore-icon/check-circle.svg" alt="check-circle svg">
-                  </div>
-                  <div>
-                    <small class="fs-h4 text-gray-white fw-bold">加入收藏</small>
-                  </div>
-                </div>
-              </div>
+  <!-- 加入收藏 Modal -->
+    <div>
+      <%- include('./layout/add-bookmark'); -%>
+    </div>
+  <!-- 刪除收藏 Modal -->
+    <div>
+      <%- include('./layout/del-bookmark'); -%>
+    </div>
+  <!-- 篩選 Modal -->
+  
+<!-- Modal -->
+<div class="container">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered filter-modal-content">
+      <div class="modal-content filter-modal-content mt-auto">
+          <header class="text-center d-flex align-items-center justify-content-between border-bottom py-2 px-6">
+            <a class="btn border-0" href="attractions.html" role="button"><img src="../assets/icon/attractions-icon/back.svg" alt="back button"></a>
+            <div>
+                <h4 class="fw-bold text-gray-black">篩選</h4>
             </div>
-          </div>
-        </div>
-
-        <!-- 刪除收藏 Modal -->
-        <div class="modal del-mode fade" id="del-explore-01-bookmarkModal" tabindex="-1" aria-labelledby="del-explore-01-bookmarkModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered bookmark-modal-content">
-            <div class="modal-content bg-primary-400 border-0 transition-duration-fade">
-              <div class="modal-body bg-primary-400 text-center rounded-3">
-                <div>
-                  <img src="../assets/icon/Explore-icon/check-circle.svg" alt="check-circle svg">
-                </div>
-                <div>
-                  <small class="fs-h4 text-gray-white fw-bold">刪除收藏</small>
-                </div>
-              </div>
+            <div>
+              <small class="fs-h4 text-gray-600">重設</small>
             </div>
-          </div>
+        </header>
+        <div class="modal-body">
+          ...
         </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!-- footer -->
-        <div class="position-fixed bottom-0 start-0 end-0 bg-gray-white">
-            <%- include('./layout/footer',{page:"explore"}); -%>
-        </div>
     </div>
 
     <script type="module" src="../main.js"></script>
-
     <!-- load the CDN first-->
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- If CDN fails to load, serve up the local version -->
     <script>window.JQuery || document.write('<script src="includes/js/jquery-2.1.4.min.js"><\/script>');</script>
 
-    <!-- <script>
-      $(document).ready(function(){
-          $("a").click(function(){
-            $("#explore-01-bookmarkModal").fadeTo("slow",0);
-          });
-        });
-    </script> -->
-<!-- add -->
+<!-- add event -->
     <script>
       $("#add-bookmark-01").click(function(){
       $("#add-explore-01-bookmarkModal").show();
@@ -190,6 +177,5 @@
       }, 1000);
     });
   </script>
-<!-- del -->
   </body>
 </html>
