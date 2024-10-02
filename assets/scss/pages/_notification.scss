@@ -1,17 +1,26 @@
-// .notification{
-//     box-shadow: 0px 4px 20px 0px #00000014;
-// }
-.notification-title{
-    z-index: 10;
-}
+.notification-html{
+    .bg-box-shadow{
+        // box-shadow: 0px 4px 20px 0px #00000014;
+        box-shadow: -5px 5px 10px -4px #00000014, 5px 5px 10px -4px #00000014;
+    }
+    .bg-box-shadow-no-bottom{
+        box-shadow: -5px -5px 10px -4px #00000014, 5px -5px 10px -4px #00000014;
+    }
 
-.notification-list{
-    z-index: -1;
-    height: calc(100% - 69px);
-    background-color: #fff;
-    .notify-list-style{
-        background-color: #F6F6F6;
-        border: 1px solid $gray-50;
-        box-shadow: 0px 4px 20px 0px #00000014;
+    .notification-title{
+        z-index: 10;
+    }
+
+    .notification-list{
+        z-index: -1;
+        height: calc(100% - 69px);
+        background-color: #fff;
+        .notify-list-style{
+            background-color: #F6F6F6;
+            border: 1px solid $gray-50;
+        }
+    }
+    .pt-27px{
+        padding-top: 27px;
     }
 }
