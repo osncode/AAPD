@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="booking-tickets-html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AAPD</title>
+
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+  </head>
+  <body>
+    <div class="booking-tickets container px-0 w-100 position-relative">
+        <header class="text-center d-flex align-items-center border-bottom py-2 mb-6">
+            <a class="btn border-0" href="attractions.html" role="button"><img src="../assets/icon/attractions-icon/back.svg" alt="back button"></a>
+            <div class="ms-center-title">
+                <h4 class="fw-bold text-gray-black">線上購票</h4>
+            </div>
+        </header>
+<!-- 支付進度條 -->
+        <div class="d-flex justify-content-between align-items-center mx-6 position-relative">
+            <div class="ms-6"><img src="../assets/icon/booking-tickets-icon/Ellipse-yellow.svg" alt="Ellipse-yellow svg"></div>
+            <div class="position-absolute line-position-start"><img src="../assets/icon/booking-tickets-icon/Line.svg" alt="line svg"></div> 
+            <div><img src="../assets/icon/booking-tickets-icon/Ellipse-gray.svg" alt="Ellipse-gray svg"></div>
+            <div class="position-absolute line-position-end"><img src="../assets/icon/booking-tickets-icon/Line.svg" alt="line svg"></div> 
+            <div class="me-6"><img src="../assets/icon/booking-tickets-icon/Ellipse-gray.svg" alt="Ellipse-gray svg"></div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-8">
+            <div><small class="fs-h5 ms-6 text-secondary-500 fw-bold">選擇票卷</small></div>
+            <div><small class="fs-h5 text-gray-600">選擇支付</small></div>
+            <div><small class="fs-h5 me-6 text-gray-600">確認支付</small></div>
+        </div>
+        <main class="px-6">
+<!-- 日期 -->
+            <section class="mb-10">
+                <div class="border-start border-4 border-secondary-500 mb-2">
+                    <h4 class="fs-h4 text-gray-black fw-bold ms-2">日期</h4>
+                </div>
+                <div class="border rounded-1 d-flex justify-content-between align-items-center w-100 py-9px px-3">
+                    <div class="d-flex">
+                        <img src="../assets/icon/booking-tickets-icon/calendar.svg" alt="calendar svg">
+                        <small class="fs-h5 text-gray-400 ms-2">請選擇日期</small>
+                    </div>
+                    <div><img src="../assets/icon/booking-tickets-icon/down-arrow-14px.svg" alt="down-arrow-14px svg"></div>
+                </div>
+            </section>
+<!-- 數量 -->
+            <section class="mb-10">
+                <div class="border-start border-4 border-secondary-500 mb-2">
+                    <h4 class="fs-h4 text-gray-black fw-bold ms-2">數量</h4>
+                </div>
+<!-- 全票 · 平日 -->
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div class="d-flex align-items-center">
+                        <small class="fs-h5 text-gray-black w-70px">全票 · 平日</small>
+                        <h3 class="fs-h3 text-gray-black fw-bold ms-3">$65</h3>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="../assets/icon/booking-tickets-icon/del.svg" alt="del svg">
+                        <h4 class="fs-h4 px-3">0</h4>
+                        <img src="../assets/icon/booking-tickets-icon/add.svg" alt="add svg">
+                    </div>
+                </div>
+<!-- 全票 · 假日 -->
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div class="d-flex align-items-center">
+                        <small class="fs-h5 text-gray-black w-70px">全票 · 假日</small>
+                        <h3 class="fs-h3 text-gray-black fw-bold ms-3">$80</h3>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="../assets/icon/booking-tickets-icon/del.svg" alt="del svg">
+                        <h4 class="fs-h4 px-3">0</h4>
+                        <img src="../assets/icon/booking-tickets-icon/add.svg" alt="add svg">
+                    </div>
+                </div>
+<!-- 半票 -->
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div class="d-flex align-items-center">
+                        <small class="fs-h5 text-gray-black w-70px">半票</small>
+                        <h3 class="fs-h3 text-gray-black fw-bold ms-3">$40</h3>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="../assets/icon/booking-tickets-icon/del.svg" alt="del svg">
+                        <h4 class="fs-h4 px-3">0</h4>
+                        <img src="../assets/icon/booking-tickets-icon/add.svg" alt="add svg">
+                    </div>
+                </div>
+<!-- 團體票 -->
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div class="d-flex align-items-center">
+                        <small class="fs-h5 text-gray-black w-70px">團體票</small>
+                        <h3 class="fs-h3 text-gray-black fw-bold ms-3">$65</h3>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="../assets/icon/booking-tickets-icon/del.svg" alt="del svg">
+                        <h4 class="fs-h4 px-3">0</h4>
+                        <img src="../assets/icon/booking-tickets-icon/add.svg" alt="add svg">
+                    </div>
+                </div>
+<!-- 優待票 -->
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div class="d-flex align-items-center">
+                        <small class="fs-h5 text-gray-black w-70px">優待票</small>
+                        <h3 class="fs-h3 text-gray-black fw-bold ms-3">$10</h3>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="../assets/icon/booking-tickets-icon/del.svg" alt="del svg">
+                        <h4 class="fs-h4 px-3">0</h4>
+                        <img src="../assets/icon/booking-tickets-icon/add.svg" alt="add svg">
+                    </div>
+                </div>
+            </section>
+<!-- 兌換期限 -->
+            <section class="mb-10">
+                <div class="border-start border-4 border-secondary-500 mb-2">
+                    <h4 class="fs-h4 text-gray-black fw-bold ms-2">兌換期限</h4>
+                </div>
+                <div><small class="fs-h5 text-gray-black">憑證使用期限為訂單確認日起 180 天，於最後一天 23:59 到期。</small></div>
+            </section>
+<!-- 聯絡資料 -->
+            <section class="mb-10">
+                <div class="border-start border-4 border-secondary-500 mb-2">
+                    <h4 class="fs-h4 text-gray-black fw-bold ms-2">聯絡資料</h4>
+                </div>
+                <div><small class="fs-h5 text-gray-black">憑證使用期限為訂單確認日起 180 天，於最後一天 23:59 到期。</small></div>
+            </section>
+        </main>
+
+
+    <script type="module" src="../main.js"></script>
+    <!-- load the CDN first-->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- If CDN fails to load, serve up the local version -->
+    <script>window.JQuery || document.write('<script src="includes/js/jquery-2.1.4.min.js"><\/script>');</script>
+  </body>
+</html>
