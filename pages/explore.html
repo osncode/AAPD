@@ -20,7 +20,7 @@
                   </a>
               </div>
               <div class="ms-3">
-                  <a class="btn rounded-2 btn-link-style p-2 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">
+                  <a class="btn rounded-2 btn-link-style p-2 border-0" data-bs-toggle="modal" data-bs-target="#explore-filterModal" type="button">
                       <img src="../assets/icon/Explore-icon/filter-gray-600-24px.svg" alt="filter svg">
                   </a>
               </div>
@@ -129,29 +129,8 @@
       <%- include('./layout/del-bookmark'); -%>
     </div>
   <!-- 篩選 Modal -->
-  
-<!-- Modal -->
-<div class="container">
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered filter-modal-content">
-      <div class="modal-content filter-modal-content mt-auto">
-          <header class="text-center d-flex align-items-center justify-content-between border-bottom py-2 px-6">
-            <a class="btn border-0" href="attractions.html" role="button"><img src="../assets/icon/attractions-icon/back.svg" alt="back button"></a>
-            <div>
-                <h4 class="fw-bold text-gray-black">篩選</h4>
-            </div>
-            <div>
-              <small class="fs-h4 text-gray-600">重設</small>
-            </div>
-        </header>
-        <div class="modal-body">
-          ...
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+    <div>
+      <%- include('./layout/explore-filter'); -%>
     </div>
 
     <script type="module" src="../main.js"></script>

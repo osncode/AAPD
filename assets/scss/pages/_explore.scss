@@ -82,6 +82,34 @@
     .modal-backdrop{
         opacity: 0 !important;
       }
+    .w-103px{
+        width: 103px;
+    }
+    .w-109px{
+        width: 109px;
+    }
+    // .current-style{
+    //     font-weight: bold;
+    //     background-color: $primary-100;
+    //     small{
+    //         color: $primary-600!important;
+    //     }
+    // }
+    .sort{
+        &:hover{
+            font-weight: bold;
+            background-color: $primary-100;
+            small{
+                color: $primary-600!important;
+            }
+        }
+    }
+    .expansion-icon{
+        transition: transform 0.3s linear;
+      }
+    [aria-expanded='true'] .expansion-icon{
+        transform: rotate(-180deg);
+      }
 }
 
 .bookmark-modal-content{
