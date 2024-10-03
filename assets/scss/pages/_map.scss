@@ -66,11 +66,9 @@ hr{
 
 .Filter{
     .modal-dialog{
-        display: fixed;
         bottom: 0;
-        left: 0;
-        right: 0;
-        margin: 0;
+        margin: 0 auto;
+        max-width: 375px;
     }
     .col-4 :hover{
     color: $primary-600;
@@ -103,8 +101,9 @@ hr{
         background-color: $gray-200;
     }
     .img20{
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
+        padding: 1pxz;
     }
     h4{
         line-height: 2;
@@ -119,11 +118,10 @@ hr{
 }
 .map-modal-pick-NationalForestRegion{
     .modal-dialog{
+        max-width: 375px;
         display: fixed;
         bottom: 0;
-        left: 0;
-        right: 0;
-        margin: 0;
+        margin: 0 auto;
         height: 812px;
     }
 }
