@@ -7,9 +7,11 @@
     .form-control{
         width: 275px;
         height: 40px;
-        :focus{
-            border-color: inherit;
-        }
+    }
+    .form-control:focus {
+        color: $gray-black;
+        background-color: $gray-100;
+        border-color: $gray-300;
     }
     .searchBtn{
         font-size: 14px;
