@@ -8,6 +8,11 @@
         width: 275px;
         height: 40px;
     }
+    .form-control:focus {
+        color: $gray-black;
+        background-color: $gray-100;
+        border-color: $gray-300;
+    }
     .searchBtn{
         font-size: 14px;
         width: 102px;
@@ -49,6 +54,9 @@
     width: 100%;
     margin-bottom: 68.67px;
 }
+hr{
+    margin: 0;
+}
 .titleHr{
     width: 36px;
     height: 5px;
@@ -70,6 +78,11 @@
     background-color: $primary-100;
     border-color: $primary-300;
     }
+    .row{
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 0;
+    }
 }
 
 .offcanvas.offcanvas-bottom {
@@ -79,13 +92,10 @@
     .offcanvas-header{
         border-bottom: 1px solid $gray-200;
     }
-    a.position-absolute{
-        top:-9.8px;
-    }
     a.gap-1{
         width: 104px;
         height: 46px;
-        padding:12px 20px;
+        padding:12px 24px;
     }
     .dot{
         width: 4px;
@@ -95,6 +105,16 @@
     .img20{
         width: 20px;
         height: 20px;
+    }
+    h4{
+        line-height: 2;
+    }
+    a.btn-secondary-500{
+        border-width: 0;
+    }
+    .modal-footer{
+        margin: 0;
+        padding: 0;
     }
 }
 .map-modal-pick-NationalForestRegion{
@@ -106,4 +126,7 @@
         margin: 0;
         height: 812px;
     }
+}
+.offcanvas-body{
+    padding: 16px 4px;
 }
