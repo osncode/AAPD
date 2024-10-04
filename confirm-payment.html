@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="confirm-payment-html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AAPD</title>
+
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <script type="module" crossorigin src="/AAPD/assets/main-9335754e.js"></script>
+    <link rel="stylesheet" href="/AAPD/assets/main-509fc39e.css">
+  </head>
+  <body>
+    <div class="confirm-payment container px-0 w-100 position-relative vh-100">
+        <header class="text-center d-flex align-items-center py-2 mb-6">
+            <a class="btn border-0" href="credit-card-details.html" role="button"><img src="/AAPD/assets/back-white-7e2f635b.svg" alt="back button"></a>
+        </header>
+<!-- 支付進度條 -->
+        <div class="d-flex justify-content-between align-items-center mx-6 position-relative">
+            <div class="ellipse ms-6"><img src="/AAPD/assets/Ellipse-yellow-e57752a0.svg" alt="Ellipse-yellow svg"></div>
+            <div class="position-absolute line-position-start"><img src="/AAPD/assets/Line-yellow-a8e5bef6.svg" alt="Line-yellow svg"></div> 
+            <div class="ellipse"><img src="/AAPD/assets/Ellipse-yellow-e57752a0.svg" alt="Ellipse-yellow svg"></div>
+            <div class="position-absolute line-position-end"><img src="/AAPD/assets/Line-yellow-a8e5bef6.svg" alt="line-yellow svg"></div> 
+            <div class="ellipse me-6"><img src="/AAPD/assets/Ellipse-yellow-e57752a0.svg" alt="Ellipse-yellow svg"></div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2 mb-8">
+            <div><small class="fs-h5 ms-6 text-gray-white fw-bold">選擇票卷</small></div>
+            <div><small class="fs-h5 text-gray-white fw-bold">選擇支付</small></div>
+            <div><small class="fs-h5 me-6 text-gray-white fw-bold">確認支付</small></div>
+        </div>
+        <div class="text-center mb-46px">
+            <span class="fs-h1 fw-bold text-gray-white">NT 65</span>
+        </div>
+<!-- main -->
+        <main class="h-content">
+            <div class="rounded-top radius-style bg-gray-white h-100 pt-6 px-6">
+    <!-- 交易金額 -->
+                <div class="mb-3 d-flex">
+                    <div class="w-107px">
+                        <span class="fs-h5 text-gray-black fw-bold">交易金額</span>
+                    </div>
+                    <div class="ms-3">
+                        <small class="fs-h5 text-gray-black">NT 65</small>
+                    </div>
+                </div>
+    <!-- 信用卡號 -->
+                    <div class="mb-3 d-flex">
+                        <div class="w-107px">
+                            <span class="fs-h5 text-gray-black fw-bold">信用卡號</span>
+                        </div>
+                        <div class="ms-3">
+                            <small class="fs-h5 text-gray-black">400*-****-****-9010</small>
+                        </div>
+                    </div>
+    <!-- 交易日期 -->
+                    <div class="mb-10 d-flex">
+                        <div class="w-107px">
+                            <span class="fs-h5 text-gray-black fw-bold">交易日期</span>
+                        </div>
+                        <div class="ms-3">
+                            <small class="fs-h5 text-gray-black">2024/08/10 23:58:00</small>
+                        </div>
+                    </div>
+    <!-- 簡訊 OTP 驗證碼 -->
+                    <div class="mb-2 d-flex">
+                        <div class="me-auto">
+                            <span class="fs-h5 text-gray-black fw-bold">簡訊 OTP 驗證碼</span>
+                        </div>
+                        <input type="text" class="form-control rounded-1 fs-h5 text-gray-black ms-3 w-208px" id="lastName" placeholder="0724688">
+                    </div>
+                    <div class="text-end">
+                        <small class="fs-h6 text-secondary-500 me-17px">OTP 驗證碼碼有效時間為 5 分鐘</small>
+                    </div>
+    
+            </div>
+        </main>
+        <!-- scroll -->
+        <div class="scroll"></div>
+<!-- footer -->
+        <footer class="container bg-gray-white item-border pt-3 pb-2 px-6 mt-auto bottom-0 w-100 position-fixed footer-z-index">
+            <a  class="btn btn-primary-600 next-step fs-h4 fw-bold rounded-2 mb-2 w-100" href="complete-payment.html" type="button">驗證</a>
+        </footer>
+    </div>
+    
+    <!-- load the CDN first-->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- If CDN fails to load, serve up the local version -->
+    <script>window.JQuery || document.write('<script src="includes/js/jquery-2.1.4.min.js"><\/script>');</script>
+  </body>
+</html>
