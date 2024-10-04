@@ -10,8 +10,8 @@
     }
     .form-control:focus {
         color: $gray-black;
-        background-color: $gray-100;
-        border-color: $gray-300;
+        background-color: $gray-50;
+        border-color: $gray-200;
     }
     .searchBtn{
         font-size: 14px;
@@ -128,7 +128,4 @@ hr{
     .modal-header a{
         border: 0;
     }
-}
-.offcanvas-body{
-    padding: 16px 4px;
 }
