@@ -7,8 +7,8 @@
     <title>AAPD</title>
 
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <script type="module" crossorigin src="/AAPD/assets/main-7a7975c3.js"></script>
-    <link rel="stylesheet" href="/AAPD/assets/main-c3ce8cd9.css">
+    <script type="module" crossorigin src="/AAPD/assets/main-24009292.js"></script>
+    <link rel="stylesheet" href="/AAPD/assets/main-73518b0a.css">
   </head>
   <body>
     <div class="booking-tickets container px-0 w-100 position-relative">
@@ -123,11 +123,58 @@
                 <div class="border-start border-4 border-secondary-500 mb-2">
                     <h4 class="fs-h4 text-gray-black fw-bold ms-2">聯絡資料</h4>
                 </div>
-                <div><small class="fs-h5 text-gray-black">憑證使用期限為訂單確認日起 180 天，於最後一天 23:59 到期。</small></div>
+    <!-- 姓氏 -->
+                <div class="mb-4">
+                    <label class="fs-h5 text-gray-black fw-bold mb-2" for="lastName" class="form-label">姓氏</label>
+                    <input type="text" class="form-control rounded-1 fs-h5 text-gray-black" id="lastName" placeholder="林">
+                </div>
+    <!-- 名字 -->
+                <div class="mb-4">
+                    <label class="fs-h5 text-gray-black fw-bold mb-2" for="firstName" class="form-label">名字</label>
+                    <input type="text" class="form-control rounded-1 fs-h5 text-gray-black" id="firstName" placeholder="佳怡">
+                </div>
+    <!-- 手機號碼 -->
+                <div class="mb-4">
+                    <label class="fs-h5 text-gray-black fw-bold mb-2" for="phoneNumber" class="form-label">手機號碼</label>
+                    <input type="tel" class="form-control rounded-1 fs-h5 text-gray-black" id="phoneNumber" placeholder="0912345678">
+                </div>
+    <!-- 電子信箱 -->
+                <div>
+                    <label class="fs-h5 text-gray-black fw-bold mb-2" for="e-Mail" class="form-label">電子信箱</label>
+                    <input type="tel" class="form-control rounded-1 fs-h5 text-gray-black" id="e-Mail" placeholder="abc@gmail.com">
+                </div>
+            </section>
+<!-- 發票 / 收據 -->
+            <section class="mb-10">
+                <div class="border-start border-4 border-secondary-500 mb-18px">
+                    <h4 class="fs-h4 text-gray-black fw-bold ms-2">發票 / 收據</h4>
+                </div>
+    <!-- 類型 -->
+                <div>
+                    <label class="fs-h5 text-gray-black fw-bold mb-2" class="form-label">類型</label>
+                </div>
+                <div class="checkbox-person form-check form-check-inline mb-18px ps-0">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="person" value="option1">
+                    <label class="form-check-label" for="person">個人</label>
+                </div>
+                <div class="checkbox-taxID form-check form-check-inline ps-0 ms-4">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="taxID" value="option2">
+                    <label class="form-check-label" for="taxID">統一編號</label>
+                </div>
+    <!-- 條碼載具 -->
+                <div>
+                    <label class="fs-h5 text-gray-black fw-bold mb-2" for="e-Mail" class="form-label">條碼載具</label>
+                    <input type="number" class="form-control rounded-1 fs-h5 text-gray-black" id="e-Mail" placeholder="/.85MQH8">
+                </div>
             </section>
         </main>
-
-
+<!-- scroll -->
+        <div class="scroll"></div>
+<!-- footer -->
+        <footer class="container bg-gray-white item-border pt-3 pb-2 px-6 mt-auto bottom-0 w-100 position-fixed footer-z-index">
+            <a class="btn btn-primary-600 next-step fs-h4 fw-bold rounded-2 mb-2 d-block" href="#" role="button">下一步</a>
+        </footer>
+    </div>
     
     <!-- load the CDN first-->
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
