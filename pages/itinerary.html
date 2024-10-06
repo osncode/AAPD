@@ -18,9 +18,9 @@
                 </div>
             </header>
         </div>
-        <main class="bg-white rounded-4 position-absolute bottom-0 start-0 end-0 form-content">
+        <main class="bg-white rounded-top-4 position-absolute bottom-0 start-0 end-0 form-content">
 <!-- 請輸入 行程名稱 -->
-          <form class="pt-6 h-100 form-content position-relative d-flex flex-column rounded-4">
+          <form class="pt-6 h-100 form-content position-relative d-flex flex-column rounded-top-4">
             <div class="px-6">
               <label for="itinerary-name" class="form-label fs-h5 fw-600">行程名稱</label>
               <input type="text" class="form-control rounded-1 mb-6 fs-h5" id="itinerary-name" placeholder="快樂出遊" maxlength="24">
@@ -53,20 +53,30 @@
             </footer>
           </form>
       </main>
-      <!-- Modal 國家森林區域 -->
-      <div class="modal-pick-NationalForestRegion">
-        <%- include('./layout/itinerary-pick-NationalForestRegion'); -%>
-      </div>
-<!-- Modal 日期-->
-      <div class="modal-datepicker">
-        <%- include('./layout/datepicker'); -%>
-      </div>
-<!-- Modal 交通工具 -->
-      <div class="modal-transportation">
-        <%- include('./layout/pick-Transportation'); -%>
-      </div>
     </div>
-
+<!-- Modal 國家森林區域 -->
+    <div class="modal-pick-NationalForestRegion">
+      <%- include('./layout/itinerary-pick-NationalForestRegion'); -%>
+    </div>
+<!-- Modal 日期-->
+    <div class="modal-datepicker">
+      <%- include('./layout/datepicker'); -%>
+    </div>
+<!-- Modal 交通工具 -->
+    <div class="modal-transportation">
+      <%- include('./layout/pick-Transportation'); -%>
+    </div>
     <script type="module" src="../main.js"></script>
+    <script>
+      document.querySelectorAll('input').forEach(function(element) {
+        element.addEventListener('focus', function() {
+            document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0');
+        });
+    
+        element.addEventListener('blur', function() {
+            document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0');
+        });
+    });
+  </script>
   </body>
 </html>
