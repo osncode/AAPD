@@ -19,12 +19,24 @@
         margin-left: calc((100% / 2 ) - 99.58px );
     }
     .bg-itinerary{
-        background-image: url(../images/itinerary-Background.png);
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 50%), url(../images/itinerary-Background.png);
         background-size: contain;
     }
-
+    .bg-repeat{
+        background-image: url(../images/itinerary-Background-repeat.png);
+        background-repeat: repeat-y;
+        z-index: 8;
+    }
+    .bg-content{
+        height: 28.325%;
+        z-index: 9;
+    }
     .form-content{
-        height: 73%;
+        height: 75.369%;
+        z-index: 10;
+    }
+    .footer-content{
+        z-index: 11;
     }
 
     .fw-600{
@@ -49,6 +61,16 @@
     }
     .h-43px{
         height: 43px;
+    }
+    .mb-85px{
+        margin-bottom: 85px;
+    }
+    .overflow-scroll{
+        overflow-y: scroll;
+    }
+    .h-overflow-scroll{
+        height: 133px;
+        width: 100%;
     }
 
 }
