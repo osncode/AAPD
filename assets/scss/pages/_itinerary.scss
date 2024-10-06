@@ -19,12 +19,16 @@
         margin-left: calc((100% / 2 ) - 99.58px );
     }
     .bg-itinerary{
-        background-image: url(../images/itinerary-Background.png);
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 50%), url(../images/itinerary-Background.png);
         background-size: contain;
     }
-
+    .bg-content{
+        height: 28%;
+        z-index: 9;
+    }
     .form-content{
-        height: 73%;
+        height: 75%;
+        z-index: 10;
     }
 
     .fw-600{
