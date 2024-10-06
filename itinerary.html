@@ -7,54 +7,56 @@
     <title>AAPD</title>
 
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <script type="module" crossorigin src="/AAPD/assets/main-b6fed003.js"></script>
-    <link rel="stylesheet" href="/AAPD/assets/main-2c7efda8.css">
+    <script type="module" crossorigin src="/AAPD/assets/main-a99220a8.js"></script>
+    <link rel="stylesheet" href="/AAPD/assets/main-6993e478.css">
   </head>
   <body>
-    <div class="new-itinerary container px-0 vh-100 d-flex flex-column bg-box-shadow position-relative bg-repeat">
-        <div class="bg-itinerary w-100 bg-content position-absolute top-0">
-            <header class="text-center d-flex align-items-center">
-                <a class="btn" href="new-index.html" role="button"><img src="/AAPD/assets/back_40-e100e6f0.svg" alt="back button"></a>
-                <div class="ms-center-title">
-                    <h4 class="fw-bold text-white">新行程</h4>
-                </div>
-            </header>
-        </div>
-        <main class="bg-white rounded-top-4 position-absolute bottom-0 start-0 end-0 form-content">
-<!-- 請輸入 行程名稱 -->
-          <form class="pt-6 h-100 form-content position-relative d-flex flex-column rounded-top-4">
-            <div class="px-6">
-              <label for="itinerary-name" class="form-label fs-h5 fw-600">行程名稱</label>
-              <input type="text" class="form-control rounded-1 mb-6 fs-h5" id="itinerary-name" placeholder="快樂出遊" maxlength="24">
-<!-- 國家森林區域 按鈕 -->
-              <label for="itinerary-NationalForestRegion" class="form-label fs-h5 fw-600">國家森林區域</label>
-              <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active" data-bs-toggle="modal" href="#itinerary-modalNationalForestRegion" role="button" id="itinerary-NationalForestRegion">
+    <div class="new-itinerary container px-0 vh-100 d-flex flex-column bg-box-shadow position-relative">
+      <div class="bg-repeat">
+          <div class="bg-itinerary w-100 bg-content position-absolute top-0">
+              <header class="text-center d-flex align-items-center">
+                  <a class="btn" href="new-index.html" role="button"><img src="/AAPD/assets/back_40-e100e6f0.svg" alt="back button"></a>
+                  <div class="ms-center-title">
+                      <h4 class="fw-bold text-white">新行程</h4>
+                  </div>
+              </header>
+          </div>
+          <main class="bg-white rounded-top-4 position-absolute bottom-0 start-0 end-0 form-content">
+  <!-- 請輸入 行程名稱 -->
+            <form class="pt-6 h-100 form-content position-relative d-flex flex-column rounded-top-4">
+              <div class="px-6">
+                <label for="itinerary-name" class="form-label fs-h5 fw-600">行程名稱</label>
+                <input type="text" class="form-control rounded-1 mb-6 fs-h5" id="itinerary-name" placeholder="快樂出遊" maxlength="24">
+  <!-- 國家森林區域 按鈕 -->
+                <label for="itinerary-NationalForestRegion" class="form-label fs-h5 fw-600">國家森林區域</label>
+                <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active" data-bs-toggle="modal" href="#itinerary-modalNationalForestRegion" role="button" id="itinerary-NationalForestRegion">
 
-              <img src="/AAPD/assets/tree-596d8f14.svg" alt="tree svg">
-              <span class="fs-h5 ms-2">內洞國家森林遊樂區</span>
-              <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
-              </a>
-<!-- 請選擇 日期 -->
-              <label for="itinerary-date" class="form-label fs-h5 fw-600">日期</label>
-              <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active" href="#modalDatePicker" role="button" id="itinerary-date" data-bs-toggle="modal">
-                <img src="/AAPD/assets/calendar-5a64de12.svg" alt="calendar svg">
-                <span class="fs-h5 ms-2">2024/08/10-2024/08/12</span>
+                <img src="/AAPD/assets/tree-596d8f14.svg" alt="tree svg">
+                <span class="fs-h5 ms-2">內洞國家森林遊樂區</span>
                 <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
-              </a>
-<!-- 請選擇 交通工具 -->
-              <label for="itinerary-transportation" class="form-label fs-h5 fw-600">交通工具</label>
-              <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active" data-bs-toggle="modal" href="#modalTransportation" role="button" id="itinerary-transportation">
-                <img src="/AAPD/assets/transportation-01e73b24.svg" alt="transportation svg">
-                <span class="fs-h5 ms-2">汽車</span>
-                <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
-              </a>
-            </div>
+                </a>
+  <!-- 請選擇 日期 -->
+                <label for="itinerary-date" class="form-label fs-h5 fw-600">日期</label>
+                <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active" href="#modalDatePicker" role="button" id="itinerary-date" data-bs-toggle="modal">
+                  <img src="/AAPD/assets/calendar-5a64de12.svg" alt="calendar svg">
+                  <span class="fs-h5 ms-2">2024/08/10-2024/08/12</span>
+                  <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
+                </a>
+  <!-- 請選擇 交通工具 -->
+                <label for="itinerary-transportation" class="form-label fs-h5 fw-600">交通工具</label>
+                <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active" data-bs-toggle="modal" href="#modalTransportation" role="button" id="itinerary-transportation">
+                  <img src="/AAPD/assets/transportation-01e73b24.svg" alt="transportation svg">
+                  <span class="fs-h5 ms-2">汽車</span>
+                  <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
+                </a>
+              </div>
+            </form>
+        </main>
+      </div>
 <!-- footer -->
-            <footer class="position-fixednpm item-border pt-3 pb-2 px-6 mt-auto bottom-0 start-0 end-0 w-100">
-              <a class="btn btn-primary-600 next-step fs-h4 fw-bold rounded-2 mb-2 d-block" href="map.html" role="button">下一步</a>
-            </footer>
-          </form>
-      </main>
+      <footer class="container position-fixed item-border pt-3 pb-2 px-6 mt-auto bottom-0 start-0 end-0 footer-content">
+        <a class="btn btn-primary-600 next-step fs-h4 fw-bold rounded-2 mb-2 d-block" href="map.html" role="button">下一步</a>
+      </footer>
     </div>
 <!-- Modal 國家森林區域 -->
     <div class="modal-pick-NationalForestRegion">
