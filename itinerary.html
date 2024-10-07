@@ -7,8 +7,8 @@
     <title>AAPD</title>
 
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <script type="module" crossorigin src="/AAPD/assets/main-ef7d6ed3.js"></script>
-    <link rel="stylesheet" href="/AAPD/assets/main-c4bd126e.css">
+    <script type="module" crossorigin src="/AAPD/assets/main-8ea72564.js"></script>
+    <link rel="stylesheet" href="/AAPD/assets/main-fefc831d.css">
   </head>
   <body>
     <div class="new-itinerary container px-0 vh-100 d-flex flex-column bg-box-shadow position-relative">
@@ -37,18 +37,18 @@
                 </button>
   <!-- 請選擇 日期 -->
                 <label for="itinerary-date" class="form-label fs-h5 fw-600">日期</label>
-                <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active" href="#modalDatePicker" role="button" id="itinerary-date" data-bs-toggle="modal">
+                <button class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active w-100" data-bs-target="#modalDatePicker" type="button" id="itinerary-date" data-bs-toggle="modal">
                   <img src="/AAPD/assets/calendar-5a64de12.svg" alt="calendar svg">
                   <span class="fs-h5 ms-2">2024/08/10-2024/08/12</span>
                   <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
-                </a>
+                </button>
   <!-- 請選擇 交通工具 -->
                 <label for="itinerary-transportation" class="form-label fs-h5 fw-600">交通工具</label>
-                <a class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active" data-bs-toggle="modal" href="#modalTransportation" role="button" id="itinerary-transportation">
+                <button class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active w-100" data-bs-toggle="modal" data-bs-target="#modalTransportation" type="button" id="itinerary-transportation">
                   <img src="/AAPD/assets/transportation-01e73b24.svg" alt="transportation svg">
                   <span class="fs-h5 ms-2">汽車</span>
                   <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
-                </a>
+                </button>
               </div>
             </form>
             <div class="h-overflow-scroll"></div>
