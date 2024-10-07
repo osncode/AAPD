@@ -20,7 +20,7 @@
     }
     .bg-itinerary{
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 50%), url(../images/itinerary-Background.png) no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
     .bg-repeat{
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%), url(../images/itinerary-Background-repeat.png) , repeat;
