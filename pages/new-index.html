@@ -10,13 +10,16 @@
   </head>
   <body>
     <div class="home-itinerary container px-0 d-flex flex-column align-items-center justify-content-between vh-100 position-relative">
-      <h4 class="fw-bold mb-2 text-gray-black mt-6">我的行程</h4>
+      <div class="text-center w-100">
+        <h4 class="fw-bold py-2 border-bottom text-gray-black mt-6">我的行程</h4>
+      </div>
       <div class="text-center w-100">
         <img class="mb-4" src="../assets/images/backpacker-1.png" alt="backpacker png">
         <p class="mb-4 text-gray-400 fs-h5">還沒有安排新行程哦～</p>
         <a role="button" href="itinerary.html" class="btn btn-secondary-500 text-white rounded-4 w-181px h-43px py-3"><h4 class="fw-bold">建立新行程</h4></a>
       </div>
-      <div class="w-100 position-fixed bottom-0 start-0 end-0">
+      <div class="h-overflow-scroll"></div>
+      <div class="w-100 position-fixed bottom-0 start-0 end-0 ">
         <%- include('./layout/footer',{page:"itinerary"}); -%>
       </div>
     </div>
