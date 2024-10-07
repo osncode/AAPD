@@ -23,8 +23,7 @@
         background-size: contain;
     }
     .bg-repeat{
-        background-image: url(../images/itinerary-Background-repeat.png);
-        background-repeat: repeat-y;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%), url(../images/itinerary-Background-repeat.png) , repeat-y;
         z-index: 8;
     }
     .bg-content{
