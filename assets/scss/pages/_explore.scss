@@ -110,6 +110,17 @@
     [aria-expanded='true'] .expansion-icon{
         transform: rotate(-180deg);
       }
+    .search-content{
+        width: 275px;
+        height: 40px;
+    }
+    .filter-content{
+        width: 40px;
+        height: 40px;
+    }
+    .input-color{
+        color: black !important;
+    }
 }
 
 .bookmark-modal-content{
