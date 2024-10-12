@@ -107,6 +107,20 @@
     .footer-z-index{
         z-index: 12;
     }
+    .border-3px{
+        border: 3px;
+    }
+    .mb-10px{
+        margin-bottom: 10px;
+    }
+    .border-title-style{
+        width: 4px;
+        height: 24px;
+        background-color: $secondary-500;
+    }
+    .fs-15px{
+        font-size: 15px;
+    }
 }
 
 .bookmark-modal-content{
