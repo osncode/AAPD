@@ -7,8 +7,8 @@
     <title>AAPD</title>
 
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <script type="module" crossorigin src="/AAPD/assets/main-87afd676.js"></script>
-    <link rel="stylesheet" href="/AAPD/assets/main-85f6b563.css">
+    <script type="module" crossorigin src="/AAPD/assets/main-c19e8bae.js"></script>
+    <link rel="stylesheet" href="/AAPD/assets/main-eefdd5e1.css">
   </head>
   <body>   
     <div class="explore container d-flex flex-column align-items-center h-100 position-relative bg-box-shadow px-0">
@@ -202,227 +202,232 @@
       <!-- 篩選 Modal -->
 <div class="container">
     <div class="modal fade" id="explore-filterModal" tabindex="-1" aria-labelledby="explore-filterModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered filter-modal-content modal-dialog-scrollable rounded-0 border-0">
-        <div class="modal-content filter-modal-content mt-auto">
-            <header class="text-center d-flex align-items-center justify-content-between border-bottom py-2 px-6">
-              <a class="btn border-0" data-bs-dismiss="modal" role="button"><img src="/AAPD/assets/back-65c9e465.svg" alt="back button"></a>
-              <div>
-                  <h4 class="fw-bold text-gray-black">篩選</h4>
+      <div class="container px-0 position-relative h-100">
+        <div class="modal-dialog modal-dialog-centered filter-modal-content modal-dialog-scrollable rounded-0 border-0">
+          <div class="modal-content filter-modal-content mt-auto">
+              <header class="text-center d-flex align-items-center justify-content-between border-bottom py-2 px-6">
+                <a class="btn border-0" data-bs-dismiss="modal" role="button"><img src="/AAPD/assets/back-65c9e465.svg" alt="back button"></a>
+                <div>
+                    <h4 class="fw-bold text-gray-black">篩選</h4>
+                </div>
+                <div>
+                  <small class="fs-h4 text-gray-600">重設</small>
+                </div>
+            </header>
+            <div class="modal-body px-6 pt-6">
+    
+    <!-- 排序依據 -->
+              <section class="d-flex flex-column align-items-center mb-6 text-start">
+                <div class="text-start w-100 mb-2">
+                  <small class="fs-h5 fw-bold text-gray-black">排序依據</small>
+                </div>
+                
+                <div class="sort-list w-100 d-flex justify-content-center">
+                <!-- 最新 -->
+                  <div class="sort border radius-style-start py-2 px-6 w-109px text-center"><small class="fs-h5 text-gray-black">最新</small></div>
+                <!-- 瀏覽數 -->
+                  <div class="sort border py-2 px-6 w-109px text-center"><small class="fs-h5 text-gray-black">瀏覽數</small></div>
+                <!-- 距離 -->
+                  <div class="sort border radius-style-end py-2 px-6 w-109px text-center"><small class="fs-h5 text-gray-black">距離</small></div>
+                </div>
+              </section>
+    
+    <!-- 旅遊天數 -->
+              <section class="trip-days d-flex justify-content-between align-items-center mt-6">
+                <small class="fs-h5 fw-bold mb-2 text-gray-black">旅遊天數</small>
+                <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTravel-days" aria-expanded="false" aria-controls="collapseTravel-days">
+                  <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
+                </button>
+              </section>
+              <!-- collapsed -->
+              <div class="collapse" id="collapseTravel-days">
+                <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
+                  <!-- 1 天 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">1 天</small></div>
+                  <!-- 2 天 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">2 天</small></div>
+                  <!-- 3 天 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">3 天</small></div>
+                  <!-- 4 天 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">4 天</small></div>
+                </div>
               </div>
-              <div>
-                <small class="fs-h4 text-gray-600">重設</small>
+    
+    <!-- 旅遊季節 -->
+              <section class="tourist-season d-flex justify-content-between align-items-center mt-6">
+                <small class="fs-h5 fw-bold mb-2 text-gray-black">旅遊季節</small>
+                <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTourist-season" aria-expanded="false" aria-controls="collapseTourist-season">
+                  <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
+                </button>
+              </section>
+              <!-- collapsed -->
+              <div class="collapse" id="collapseTourist-season">
+                <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
+                  <!-- 春季 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">春季</small></div>
+                  <!-- 夏季 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">夏季</small></div>
+                  <!-- 秋季 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">秋季</small></div>
+                  <!-- 冬季 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">冬季</small></div>
+                </div>
               </div>
-          </header>
-          <div class="modal-body px-6 pt-6">
-  
-  <!-- 排序依據 -->
-            <section class="d-flex flex-column align-items-center mb-6 text-start">
-              <div class="text-start w-100 mb-2">
-                <small class="fs-h5 fw-bold text-gray-black">排序依據</small>
+    
+    <!-- 景點主題 -->
+              <section class="spot-theme d-flex justify-content-between align-items-center mt-6">
+                <small class="fs-h5 fw-bold mb-2 text-gray-black">景點主題</small>
+                <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpot-theme" aria-expanded="false" aria-controls="collapseSpot-theme">
+                  <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
+                </button>
+              </section>
+              <!-- collapsed -->
+              <div class="collapse" id="collapseSpot-theme">
+                <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
+                  <!-- 日出 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">日出</small></div>
+                  <!-- 賞花 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">賞花</small></div>
+                  <!-- 瀑布 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">瀑布</small></div>
+                  <!-- 吊橋 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">吊橋</small></div>
+                  <!-- 森林浴 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">森林浴</small></div>
+                  <!-- 賞鳥 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">賞鳥</small></div>
+                  <!-- 賞蝶 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">賞蝶</small></div>
+                  <!-- 紅葉 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">紅葉</small></div>
+                  <!-- 巨木 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">巨木</small></div>
+                  <!-- 雲海 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">雲海</small></div>
+                  <!-- 螢火蟲 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">螢火蟲</small></div>
+                </div>
               </div>
-              
-              <div class="sort-list w-100 d-flex justify-content-center">
-              <!-- 最新 -->
-                <div class="sort border rounded-1 py-2 px-6 w-109px text-center"><small class="fs-h5 text-gray-black">最新</small></div>
-              <!-- 瀏覽數 -->
-                <div class="sort border rounded-1 py-2 px-6 w-109px text-center"><small class="fs-h5 text-gray-black">瀏覽數</small></div>
-              <!-- 距離 -->
-                <div class="sort border rounded-1 py-2 px-6 w-109px text-center"><small class="fs-h5 text-gray-black">距離</small></div>
+    
+    <!-- 活動 -->
+              <section class="filter-activity d-flex justify-content-between align-items-center mt-6">
+                <small class="fs-h5 fw-bold mb-2 text-gray-black">活動</small>
+                <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter-activity" aria-expanded="false" aria-controls="collapseFilter-activity">
+                  <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
+                </button>
+              </section>
+              <!-- collapsed -->
+              <div class="collapse" id="collapseFilter-activity">
+                <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
+                  <!-- 健行 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">健行</small></div>
+                  <!-- 登山 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">登山</small></div>
+                  <!-- 露營 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">露營</small></div>
+                  <!-- 釣魚 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">釣魚</small></div>
+                  <!-- 泡湯 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">泡湯</small></div>
+                  <!-- 文化體驗 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">文化體驗</small></div>
+                  <!-- 熱氣球 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">熱氣球</small></div>
+                  <!-- 飛行傘 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">飛行傘</small></div>
+                </div>
               </div>
-            </section>
-  
-  <!-- 旅遊天數 -->
-            <section class="trip-days d-flex justify-content-between align-items-center mt-6">
-              <small class="fs-h5 fw-bold mb-2 text-gray-black">旅遊天數</small>
-              <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTravel-days" aria-expanded="false" aria-controls="collapseTravel-days">
-                <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
-              </button>
-            </section>
-            <!-- collapsed -->
-            <div class="collapse" id="collapseTravel-days">
-              <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
-                <!-- 1 天 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">1 天</small></div>
-                <!-- 2 天 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">2 天</small></div>
-                <!-- 3 天 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">3 天</small></div>
-                <!-- 4 天 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">4 天</small></div>
+    
+    <!-- 地區 -->
+              <section class="filter-area d-flex justify-content-between align-items-center mt-6">
+                <small class="fs-h5 fw-bold mb-2 text-gray-black">地區</small>
+                <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter-area" aria-expanded="false" aria-controls="collapseFilter-area">
+                  <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
+                </button>
+              </section>
+              <!-- collapsed -->
+              <div class="collapse" id="collapseFilter-area">
+                <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
+                  <!-- 北台灣 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">北台灣</small></div>
+                  <!-- 中台灣 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">中台灣</small></div>
+                  <!-- 南臺灣 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">南臺灣</small></div>
+                  <!-- 東台灣 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">東台灣</small></div>
+                </div>
               </div>
+    <!-- 開放情況 -->
+              <section class="opening-condition d-flex justify-content-between align-items-center mt-6">
+                <small class="fs-h5 fw-bold mb-2 text-gray-black">開放情況</small>
+                <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOpening-condition" aria-expanded="false" aria-controls="collapseOpening-condition">
+                  <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
+                </button>
+              </section>
+              <!-- collapsed -->
+              <div class="collapse" id="collapseOpening-condition">
+                <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
+                  <!-- 開放中 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">開放中</small></div>
+                  <!-- 關閉中 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">關閉中</small></div>
+                </div>
+              </div>
+    
+    <!-- 難度 -->
+              <section class="game-level d-flex justify-content-between align-items-center mt-6">
+                <small class="fs-h5 fw-bold mb-2 text-gray-black">難度</small>
+                <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGame-level" aria-expanded="false" aria-controls="collapseGame-level">
+                  <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
+                </button>
+              </section>
+              <!-- collapsed -->
+              <div class="collapse" id="collapseGame-level">
+                <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
+                  <!-- 低-->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">低</small></div>
+                  <!-- 中低 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">中低</small></div>
+                  <!-- 中 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">中</small></div>
+                  <!-- 中高 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">中高</small></div>
+                  <!-- 高 -->
+                  <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">高</small></div>
+                </div>
+              </div>
+    
+    <!-- 海拔高度 -->
+              <section class="filter-altitude d-flex justify-content-between align-items-center mt-6">
+                <small class="fs-h5 fw-bold mb-2 text-gray-black">海拔高度</small>
+                <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter-altitude" aria-expanded="false" aria-controls="collapseFilter-altitude">
+                  <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
+                </button>
+              </section>
+              <!-- collapsed -->
+              <div class="collapse" id="collapseFilter-altitude">
+                <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
+                  <!-- 800m 以下 -->
+                  <div class="sort border py-1 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">800m 以下</small></div>
+                  <!-- 800-1500m -->
+                  <div class="sort border py-1 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">800-1500m</small></div>
+                  <!-- 1500-2500m -->
+                  <div class="sort border py-1 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">1500-2500m</small></div>
+                  <!-- 2500m 以上 -->
+                  <div class="sort border py-1 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">2500m 以上</small></div>
+                </div>
+              </div>
+            <!-- btn 結束 -->
             </div>
-  
-  <!-- 旅遊季節 -->
-            <section class="tourist-season d-flex justify-content-between align-items-center mt-6">
-              <small class="fs-h5 fw-bold mb-2 text-gray-black">旅遊季節</small>
-              <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTourist-season" aria-expanded="false" aria-controls="collapseTourist-season">
-                <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
-              </button>
-            </section>
-            <!-- collapsed -->
-            <div class="collapse" id="collapseTourist-season">
-              <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
-                <!-- 春季 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">春季</small></div>
-                <!-- 夏季 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">夏季</small></div>
-                <!-- 秋季 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">秋季</small></div>
-                <!-- 冬季 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">冬季</small></div>
-              </div>
-            </div>
-  
-  <!-- 景點主題 -->
-            <section class="spot-theme d-flex justify-content-between align-items-center mt-6">
-              <small class="fs-h5 fw-bold mb-2 text-gray-black">景點主題</small>
-              <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpot-theme" aria-expanded="false" aria-controls="collapseSpot-theme">
-                <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
-              </button>
-            </section>
-            <!-- collapsed -->
-            <div class="collapse" id="collapseSpot-theme">
-              <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
-                <!-- 日出 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">日出</small></div>
-                <!-- 賞花 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">賞花</small></div>
-                <!-- 瀑布 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">瀑布</small></div>
-                <!-- 吊橋 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">吊橋</small></div>
-                <!-- 森林浴 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">森林浴</small></div>
-                <!-- 賞鳥 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">賞鳥</small></div>
-                <!-- 賞蝶 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">賞蝶</small></div>
-                <!-- 紅葉 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">紅葉</small></div>
-                <!-- 巨木 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">巨木</small></div>
-                <!-- 雲海 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">雲海</small></div>
-                <!-- 螢火蟲 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">螢火蟲</small></div>
-              </div>
-            </div>
-  
-  <!-- 活動 -->
-            <section class="filter-activity d-flex justify-content-between align-items-center mt-6">
-              <small class="fs-h5 fw-bold mb-2 text-gray-black">活動</small>
-              <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter-activity" aria-expanded="false" aria-controls="collapseFilter-activity">
-                <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
-              </button>
-            </section>
-            <!-- collapsed -->
-            <div class="collapse" id="collapseFilter-activity">
-              <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
-                <!-- 健行 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">健行</small></div>
-                <!-- 登山 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">登山</small></div>
-                <!-- 露營 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">露營</small></div>
-                <!-- 釣魚 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">釣魚</small></div>
-                <!-- 泡湯 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">泡湯</small></div>
-                <!-- 文化體驗 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">文化體驗</small></div>
-                <!-- 熱氣球 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">熱氣球</small></div>
-                <!-- 飛行傘 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">飛行傘</small></div>
-              </div>
-            </div>
-  
-  <!-- 地區 -->
-            <section class="filter-area d-flex justify-content-between align-items-center mt-6">
-              <small class="fs-h5 fw-bold mb-2 text-gray-black">地區</small>
-              <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter-area" aria-expanded="false" aria-controls="collapseFilter-area">
-                <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
-              </button>
-            </section>
-            <!-- collapsed -->
-            <div class="collapse" id="collapseFilter-area">
-              <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
-                <!-- 北台灣 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">北台灣</small></div>
-                <!-- 中台灣 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">中台灣</small></div>
-                <!-- 南臺灣 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">南臺灣</small></div>
-                <!-- 東台灣 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">東台灣</small></div>
-              </div>
-            </div>
-  
-  <!-- 開放情況 -->
-            <section class="opening-condition d-flex justify-content-between align-items-center mt-6">
-              <small class="fs-h5 fw-bold mb-2 text-gray-black">開放情況</small>
-              <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOpening-condition" aria-expanded="false" aria-controls="collapseOpening-condition">
-                <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
-              </button>
-            </section>
-            <!-- collapsed -->
-            <div class="collapse" id="collapseOpening-condition">
-              <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
-                <!-- 開放中 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">開放中</small></div>
-                <!-- 關閉中 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">關閉中</small></div>
-              </div>
-            </div>
-  
-  <!-- 難度 -->
-            <section class="game-level d-flex justify-content-between align-items-center mt-6">
-              <small class="fs-h5 fw-bold mb-2 text-gray-black">難度</small>
-              <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGame-level" aria-expanded="false" aria-controls="collapseGame-level">
-                <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
-              </button>
-            </section>
-            <!-- collapsed -->
-            <div class="collapse" id="collapseGame-level">
-              <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
-                <!-- 低-->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">低</small></div>
-                <!-- 中低 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">中低</small></div>
-                <!-- 中 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">中</small></div>
-                <!-- 中高 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">中高</small></div>
-                <!-- 高 -->
-                <div class="sort border py-1 px-4 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">高</small></div>
-              </div>
-            </div>
-  
-  <!-- 海拔高度 -->
-            <section class="filter-altitude d-flex justify-content-between align-items-center mt-6">
-              <small class="fs-h5 fw-bold mb-2 text-gray-black">海拔高度</small>
-              <button class="btn border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter-altitude" aria-expanded="false" aria-controls="collapseFilter-altitude">
-                <img class="expansion-icon" src="/AAPD/assets/unfold-197fec45.svg" alt="unfold svg">
-              </button>
-            </section>
-            <!-- collapsed -->
-            <div class="collapse" id="collapseFilter-altitude">
-              <div class="card card-body p-0 d-flex flex-row flex-wrap border-0">
-                <!-- 800m 以下 -->
-                <div class="sort border py-1 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">800m 以下</small></div>
-                <!-- 800-1500m -->
-                <div class="sort border py-1 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">800-1500m</small></div>
-                <!-- 1500-2500m -->
-                <div class="sort border py-1 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">1500-2500m</small></div>
-                <!-- 2500m 以上 -->
-                <div class="sort border py-1 me-1 mb-1 rounded-pill w-103px text-center"><small class="fs-h5 text-gray-black">2500m 以上</small></div>
-              </div>
-            </div>
-          <!-- btn 結束 -->
           </div>
         </div>
-      </div>
+<!-- footer -->
+        <footer class="container bg-gray-white item-border pt-3 pb-2 px-6 bottom-0 w-100 position-fixed footer-z-index">
+          <button class="btn btn-primary-600 w-100 fs-h4 fw-bold rounded-2 mb-2 d-block" data-bs-dismiss="modal" type="button">套用</button>
+        </footer>
     </div>
+  </div>
 </div>    </div>
     
     <!-- load the CDN first-->
