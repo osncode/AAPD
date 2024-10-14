@@ -114,6 +114,14 @@
     .input-color{
         color: black !important;
     }
+    .radius-style-start{
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .radius-style-end{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
 }
 
 .bookmark-modal-content{

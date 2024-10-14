@@ -1,7 +1,7 @@
 .setting{
     box-shadow: 0px 4px 20px 0px #00000014;
     .ms-center-title{
-        margin-left: calc((100% / 2 ) - 66px );
+        margin-left: calc((100% / 2 ) - 56px );
     }
     .fw-500{
         font-weight: 500;
@@ -14,5 +14,16 @@
         &:hover, &:active, &:focus{
         background-color: #fff!important;
         }
+    }
+    .w-content{
+        width: 375px;
+        height: 40px;
+    }
+    .py-12-5px{
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+    }
+    .h-85px{
+        height: 85px;
     }
 }

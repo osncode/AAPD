@@ -1,6 +1,6 @@
 <!-- member-title 票券 -->
 <div class="container d-flex flex-column align-items-center w-100 position-fixed top-0 start-0 end-0 bg-gray-white">
-    <div class="ms-auto pe-6 pt-2">
+    <div class="ms-auto px-6 py-2">
         <a href="ticket-setting.html">
             <img src="../assets/icon/icon24px/setting.svg" alt="setting svg"></a>
     </div>
@@ -18,14 +18,14 @@
 <!-- 收藏 / 票券 選單 -->
     <div class="row w-100 d-flex text-center border-bottom">
         <section class="w-content">
-            <div class="w-100 col-6 py-3">
+            <div class="w-100 col-6 px-4 py-12-5px">
                 <a class="w-100" href="member.html">
                     <h4 class="text-gray-600 fw-bold">收藏</h4>
                 </a>
             </div>
         </section>
         <section class="w-content">
-            <div class="w-100 col-6 py-3 <%= page === 'member-ticket' ? 'click-status' : '' %>">
+            <div class="w-100 col-6 px-4 py-12-5px <%= page === 'member-ticket' ? 'click-status' : '' %>">
                 <a class="w-100" href="#">
                     <h4 class="text-gray-600 fw-bold <%= page === 'member-ticket' ? 'click-status-desc' : '' %>">票卷</h4>
                 </a>
