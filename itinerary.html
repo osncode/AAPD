@@ -7,8 +7,8 @@
     <title>AAPD</title>
 
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <script type="module" crossorigin src="/AAPD/assets/main-f296f15e.js"></script>
-    <link rel="stylesheet" href="/AAPD/assets/main-9ac59842.css">
+    <script type="module" crossorigin src="/AAPD/assets/main-cfc0db5c.js"></script>
+    <link rel="stylesheet" href="/AAPD/assets/main-10e71839.css">
   </head>
   <body>
     <div class="new-itinerary container px-0 vh-100 d-flex flex-column bg-box-shadow position-relative w-100">
@@ -32,21 +32,21 @@
                 <button class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active w-100" data-bs-toggle="modal" data-bs-target="#itinerary-modalNationalForestRegion" type="button" id="itinerary-NationalForestRegion">
 
                 <img src="/AAPD/assets/tree-596d8f14.svg" alt="tree svg">
-                <span class="fs-h5 ms-2">內洞國家森林遊樂區</span>
+                <span class="fs-h5 ms-2 text-gray-black">內洞國家森林遊樂區</span>
                 <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
                 </button>
   <!-- 請選擇 日期 -->
                 <label for="itinerary-date" class="form-label fs-h5 fw-600">日期</label>
                 <button class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active w-100" data-bs-target="#modalDatePicker" type="button" id="itinerary-date" data-bs-toggle="modal">
                   <img src="/AAPD/assets/calendar-5a64de12.svg" alt="calendar svg">
-                  <span class="fs-h5 ms-2">2024/08/10-2024/08/12</span>
+                  <span class="fs-h5 ms-2 text-gray-black">2024/08/10-2024/08/12</span>
                   <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
                 </button>
   <!-- 請選擇 交通工具 -->
                 <label for="itinerary-transportation" class="form-label fs-h5 fw-600">交通工具</label>
                 <button class="btn btn-outline-gray-200 d-flex text-start rounded-1 mb-6 text-gray-400 hover-active w-100" data-bs-toggle="modal" data-bs-target="#modalTransportation" type="button" id="itinerary-transportation">
                   <img src="/AAPD/assets/transportation-01e73b24.svg" alt="transportation svg">
-                  <span class="fs-h5 ms-2">汽車</span>
+                  <span class="fs-h5 ms-2 text-gray-black">汽車</span>
                   <img class="ms-auto" src="/AAPD/assets/chevron-841dbfd7.svg" alt="chevron svg">
                 </button>
               </div>
@@ -64,89 +64,89 @@
       <!-- Modal 國家森林區域 (行程頁面用)  -->
 <div class="container">
   <div class="modal fade" id="itinerary-modalNationalForestRegion" tabindex="-1" aria-labelledby="itinerary-National-Forest-Region-ModalLabel" aria-hidden="true" data-bs-backdrop="static">
-      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered d-flex max-width-375px mb-0 mt-56px">
-        <div class="modal-content modal-h-NationalForestRegion rounded-bottom-0 rounded-top-4 mt-auto">
+      <div class="modal-dialog modal-dialog-scrollable mx-auto d-flex flex-column h-100 max-width-375px my-0">
+        <div class="modal-content modal-h-NationalForestRegion rounded-bottom-0 rounded-top-4 mt-auto h-100">
           <div class="modal-header px-3 py-2 d-flex align-items-center">
             <button class="btn border-0" data-bs-dismiss="modal" type="button"><img src="/AAPD/assets/back-5a64f715.svg" alt="back button"></button>
             <div class="ms-center-menu">
               <h4 class="modal-title text-gray-black fw-bold lh-2" id="exampleModalLabel">選擇 國家森林遊樂區</h4>
             </div>
           </div>
-          <div class="modal-body p-6">
+          <div class="modal-body px-0 py-6">
     <!-- 臺灣北部 -->
-            <section>
+            <section class="px-6">
               <h5 class="fw-bold mb-2 text-gray-black lh-1-6">台灣北部</h5>
-              <div class="row py-2">
-                <div class="col-4 px-2px">
+              <div class="d-flex flex-wrap">
+                <div class="btn-content mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">滿月圓</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content ms-1 mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">東眼山</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content ms-1 mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">內洞</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">太平山</a>
                 </div>
               </div>
             </section>
     <!-- 臺灣中部 -->
-            <section class="mt-6">
+            <section class="mt-6 px-6">
               <h5 class="fw-bold mb-2 text-gray-black lh-1-6">台灣中部</h5>
-              <div class="row py-2">
-                <div class="col-4 px-2px">
+              <div class="d-flex flex-wrap">
+                <div class="btn-content mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">觀霧</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content ms-1 mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">大雪山</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content ms-1 mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">武嶺</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">八仙山</a>
                 </div>
               </div>
             </section>
     <!-- 臺灣南部 -->
-            <section class="mt-6">
+            <section class="mt-6 px-6">
               <h5 class="fw-bold mb-2 text-gray-black lh-1-6">台灣南部</h5>
-              <div class="row py-2">
-                <div class="col-4 px-2px">
+              <div class="d-flex flex-wrap">
+                <div class="btn-content mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">阿里山</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content ms-1 mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">合歡山</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content ms-1 mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">雙流</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">奧萬大</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content ms-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">藤枝</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content ms-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">墾丁</a>
                 </div>
               </div>
             </section>
     <!-- 臺灣東部 -->
-            <section class="mt-6">
+            <section class="mt-6 px-6">
               <h5 class="fw-bold mb-2 text-gray-black">台灣東部</h5>
-              <div class="row py-2">
-                <div class="col-4 px-2px">
+              <div class="d-flex flex-wrap">
+                <div class="btn-content mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">知本</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content ms-1 mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">富源</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content ms-1 mb-1">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">向陽</a>
                 </div>
-                <div class="col-4 px-2px">
+                <div class="btn-content">
                   <a class="btn btn-outline-gray-200 w-100 link-gray-black hover-active mb-1 fs-h5 rounded-pill" href="#" role="button">池南</a>
                 </div>
               </div>
@@ -255,7 +255,7 @@
     <div class="modal-transportation">
       <!-- Modal 交通工具 -->
 <div class="modal fade" id="modalTransportation" tabindex="-1" aria-labelledby="Transportation-ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered d-flex max-width-375px mt-56px mb-0">
+    <div class="modal-dialog modal-dialog-scrollable mx-auto d-flex flex-column h-100 max-width-375px my-0">
       <div class="modal-content rounded-bottom-0 rounded-top-4 mt-auto">
         <div class="modal-header px-3 py-2 d-flex align-items-center">
           <button class="btn border-0" data-bs-dismiss="modal" type="button"><img src="/AAPD/assets/back-5a64f715.svg" alt="back button"></button>
@@ -263,34 +263,34 @@
             <h4 class="modal-title text-gray-black fw-bold" id="exampleModalLabel">選擇 交通工具</h4>
           </div>
         </div>
-        <div class="modal-body p-3">
-          <section>
-            <div class="row py-2">
-              <div class="col-4 px-2px">
+        <div class="modal-body pt-4 px-0">
+          <section class="px-6">
+            <div class="d-flex flex-wrap">
+              <div class="btn-content mb-1">
                 <a class="btn btn-outline-gray-200 d-flex align-items-center justify-content-center w-100 link-gray-black hover-active mb-2 fs-h5 rounded-pill" href="#" role="button">
                   <img src="/AAPD/assets/car-08612f98.svg" alt="car svg">
                   <span class="fs-h5 ms-2">汽車</span>
                 </a>
               </div>
-              <div class="col-4 px-2px">
-                <a class="btn btn-outline-gray-200 d-flex align-items-center justify-content-center w-100 link-gray-black hover-active mb-2 fs-h5 rounded-pill" href="#" role="button">
+              <div class="btn-content ms-1 mb-1">
+                <a class="btn btn-outline-gray-200 d-flex align-items-center justify-content-center w-100 link-gray-black hover-active mb-2 fs-h5 rounded-pill px-0" href="#" role="button">
                   <img src="/AAPD/assets/bus-d01c0ae7.svg" alt="bus svg">
                   <span class="fs-h5 ms-2">大眾運輸</span>
                 </a>
               </div>
-              <div class="col-4 px-2px">
+              <div class="btn-content ms-1 mb-1">
                 <a class="btn btn-outline-gray-200 d-flex align-items-center justify-content-center w-100 link-gray-black hover-active mb-2 fs-h5 rounded-pill" href="#" role="button">
                   <img src="/AAPD/assets/moped-83853954.svg" alt="moped svg">
                   <span class="fs-h5 ms-2">機車</span>
                 </a>
               </div>
-              <div class="col-4 px-2px">
+              <div class="btn-content">
                 <a class="btn btn-outline-gray-200 d-flex align-items-center justify-content-center w-100 link-gray-black hover-active mb-2 fs-h5 rounded-pill" href="#" role="button">
                   <img src="/AAPD/assets/biking-df21b7a0.svg" alt="biking svg">
                   <span class="fs-h5 ms-2">腳踏車</span>
                 </a>
               </div>
-              <div class="col-4 px-2px">
+              <div class="btn-content ms-1">
                 <a class="btn btn-outline-gray-200 d-flex align-items-center justify-content-center w-100 link-gray-black hover-active mb-2 fs-h5 rounded-pill" href="#" role="button">
                   <img src="/AAPD/assets/walking-fcbb1486.svg" alt="walking svg">
                   <span class="fs-h5 ms-2">步行</span>
@@ -300,8 +300,8 @@
           </section>
         </div>
 <!-- 交通工具 確定按鈕 -->
-        <div class="modal-footer item-border pt-3 pb-2 mt-auto">
-            <button class="btn btn-primary-600 fs-h4 fw-bold rounded-2 w-100 mx-6" data-bs-dismiss="modal" type="button">確定
+        <div class="modal-footer item-border py-3 px-6 mt-auto">
+            <button class="btn btn-primary-600 fs-h4 fw-bold rounded-2 w-100" data-bs-dismiss="modal" type="button">確定
             </button>
         </div>    </div>
     
